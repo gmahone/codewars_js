@@ -3,3 +3,7 @@ timeSinceMidnight = function(h, m, s){
 }
 
 timeSinceMidnight(h = 0, m = 1, s = 1)
+
+
+/* other solutions */
+const past = (h,m,s) => 1000 * (3600 * h + 60 * m + s);
