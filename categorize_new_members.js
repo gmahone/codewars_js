@@ -9,3 +9,16 @@ function openOrSenior(data){
   }
   return out;
 }
+
+
+/* other solutions */
+function openOrSenior(data){
+  return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+}
+
+function openOrSenior(data){
+  function determineMembership(member){
+    return (member[0] >= 55 && member[1] > 7) ? 'Senior' : 'Open';
+  }
+  return data.map(determineMembership);
+}
