@@ -14,7 +14,7 @@ function couponChecker(a,b,c,d){
     return a === b & new Date(d) >= new Date(c) ? true : false;
 }
 
-// entered
+// entered - but should have used logical && rather than bitwise &!
 function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
     return enteredCode === correctCode & new Date(expirationDate) >= new Date(currentDate) ? true : false;
 }
