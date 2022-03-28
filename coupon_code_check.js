@@ -19,3 +19,11 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
     return enteredCode === correctCode & new Date(expirationDate) >= new Date(currentDate) ? true : false;
 }
 
+// add other solutions
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+  return enteredCode === correctCode && Date.parse(expirationDate) >= Date.parse(currentDate)
+}
+
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+  return enteredCode===correctCode && new Date(currentDate) <= new Date(expirationDate);
+}
