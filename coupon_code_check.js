@@ -1,0 +1,21 @@
+function couponChecker(a,b,c,d){
+    let couponDate = new Date(c);
+    let couponExpiration = new Date(d);
+    return couponExpiration >= couponDate ? true : false;
+}
+
+function couponChecker(a,b,c,d){
+    let couponDate = new Date(c);
+    let couponExpiration = new Date(d);
+    return a === b & couponExpiration >= couponDate ? true : false;
+}
+
+function couponChecker(a,b,c,d){
+    return a === b & new Date(d) >= new Date(c) ? true : false;
+}
+
+// entered
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+    return enteredCode === correctCode & new Date(expirationDate) >= new Date(currentDate) ? true : false;
+}
+
