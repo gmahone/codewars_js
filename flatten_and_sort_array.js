@@ -6,3 +6,22 @@ function flattenAndSort(array){
   }
 
   // const flattenAndSort = a => a.flat().sort( (a,b) => a - b );
+
+
+// other solutions
+
+"use strict";
+
+function flattenAndSort(array) {
+  return [].concat(...array).sort((a,b) => a - b);
+}
+
+
+function flattenAndSort(array) {
+  return array
+    .reduce((result, current) => [...result, ...current],[])
+    .sort((a, b) => a - b)
+    ;
+}
+
+const flattenAndSort = array => [].concat(...array).sort((a,b)=>a-b)
