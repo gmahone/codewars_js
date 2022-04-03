@@ -10,3 +10,17 @@ longestPalindrome=function(s){
     }
     return out;
 }
+
+// other solution
+
+longestPalindrome=function(s){
+  let isPalindrome = str => str.split('').reverse().join('') === str;
+  
+  for(let i = s.length; i >= 0; i--) {
+    for(let j = s.length - i; j >= 0; j--){
+      if( isPalindrome( s.substr(j, i) ) ){
+        return i;
+      }
+    }
+  }
+}
