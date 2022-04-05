@@ -1,4 +1,7 @@
 function comp(a, b){
+  if(a === null || b === null){
+    return false;
+  }
     let a2 = a.sort( (a,b) => a - b).map( a => a**2);
     b.sort( (a,b) => a - b);
     
