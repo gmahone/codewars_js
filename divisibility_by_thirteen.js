@@ -1,6 +1,6 @@
 // this attempt times out
 function thirt(n){
-    let multArray = [1,10,9,12,3,4,1]
+    let multArray = [1,10,9,12,3,4]
     let prev_n = n;
     let loop = true;
     let split_n
