@@ -38,3 +38,49 @@ function abbreviate(sentence){
     }
     return out.join("");
 }
+
+
+// other solutions
+
+var find = /[a-z]{4,}/gi;
+function replace(match) { return match[0] + (match.length - 2) + match[match.length - 1]; }
+
+function abbreviate(string) {
+  return string.replace(find, replace);
+}
+
+
+function abbreviate(string) {
+  return string.replace(/\w{4,}/g, function(word) {
+    return word[0] + (word.length - 2) + word.slice(-1);
+  });
+}
+
+
+function abbreviate(string) {
+  var na = /([^a-z])/i;                                                                      // 1 
+  var ss = string.split(na);                                                                 // 2
+  return ss
+    .map(function(element) {                                                                 // 3
+      if (element.length >= 4) {                                                             // 4
+         return element = "" + element[0] + (element.length-2) + element[element.length-1];
+      }                                                                                      // 5
+      else return element                                                                    // 6
+    })
+    .join(separator = "")                                                                    // 7
+}
+
+
+
+function abbreviate(string) {
+  return string.replace(/\B\w{2,}\B/g, match=> match.length);
+}
+
+
+function abbreviate(string) {
+  return string.replace(/\w{4,}/g, function(w) { return w[0] + (w.length - 2) + w[w.length - 1] });
+}
+
+
+
+const abbreviate = s => s.replace(/\B(\w{2,})(?=\w)/g, m => m.length);
