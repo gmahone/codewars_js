@@ -14,3 +14,7 @@ function prizeDraw(st, we, n){
 }
 
 let test = prizeDraw(st = "COLIN,AMANDBA,AMANDAB,CAROL,PauL,JOSEPH", we = [1, 4, 4, 5, 2, 1], n=4)
+
+
+// this algorithm will fail if a tie
+// needs to align with the python version which means sort alphabetically then by rank
