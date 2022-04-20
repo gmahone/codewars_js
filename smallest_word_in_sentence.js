@@ -2,6 +2,8 @@ function findShort(s){
   return s.split(" ").map( a => a.length ).sort( (a,b) => a - b)[0];
 }
 
+// would be nice to find a way to do the above without the 0 indexing
+
 
 // other solutions
 
