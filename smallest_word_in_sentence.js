@@ -3,7 +3,7 @@ function findShort(s){
 }
 
 // would be nice to find a way to do the above without the 0 indexing
-
+// also prob controlling for wrong input
 
 // other solutions
 
