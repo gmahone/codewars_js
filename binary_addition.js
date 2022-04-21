@@ -8,3 +8,7 @@ function addBinary(a,b) {
 
 
 // now fixed, didn't need the bitwise comparison
+
+
+// arrow function version
+const addBinary = (a, b) => (a + b).toString(2);
