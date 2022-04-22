@@ -1,5 +1,5 @@
 function countPositivesSumNegatives(input) {
-  if(input.length === 0 || input === null){
+  if(input === null || input.length === 0){
     return([]);
   }
   const positiveCount = input.filter(a => a > 0).length;
