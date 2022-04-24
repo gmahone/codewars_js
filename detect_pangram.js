@@ -26,3 +26,8 @@ function isPangram(string){
     .split('')
     .every((x) => string.toLowerCase().includes(x));
 }
+
+
+function isPangram(string){
+  return (string.match(/([a-z])(?!.*\1)/ig) || []).length === 26;
+}
