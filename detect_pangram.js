@@ -10,3 +10,19 @@ function isPangram(string){
   }
   return(result);
 }
+
+
+// other solutions
+
+function isPangram(string){
+  string = string.toLowerCase();
+  return "abcdefghijklmnopqrstuvwxyz".split("").every(function(x){
+    return string.indexOf(x) !== -1;
+  });
+}
+
+function isPangram(string){
+  return 'abcdefghijklmnopqrstuvwxyz'
+    .split('')
+    .every((x) => string.toLowerCase().includes(x));
+}
