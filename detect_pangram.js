@@ -3,7 +3,7 @@ function isPangram(string){
   let currLetterIndex;
   let result = true;
   for(let i = 0; i < testArray.length; i++){
-    currLetterIndex = string.indexOf(testArray[i]);
+    currLetterIndex = string.toLowerCase().indexOf(testArray[i]);
     if(currLetterIndex === -1){
       result = false;
     }
