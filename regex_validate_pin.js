@@ -53,3 +53,22 @@ function validatePIN (pin) {
   return result;
 }
 
+// other solutions
+// incredibly easy regex solution !
+function validatePIN(pin) {
+  return /^(\d{4}|\d{6})$/.test(pin)
+}
+
+// more involved regex solution
+function validatePIN (pin) {
+  var pinlen = pin.length;
+  var isCorrectLength = (pinlen == 4 || pinlen == 6);
+  var hasOnlyNumbers = pin.match(/^\d+$/);
+  if(isCorrectLength && hasOnlyNumbers){
+    return true;
+  }
+  return false;
+}
+
+// arrow function regex
+const validatePIN = pin => /^(\d{4}$|\d{6}$)/.test(pin);
