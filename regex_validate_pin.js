@@ -25,9 +25,10 @@ function validatePIN (pin) {
 // stepwise case solution
 function validatePIN (pin) {
   const lengthTest = pin.length == 4 || pin.length == 6;
-  const integerTest = Number.isInteger(Number(pin));
-  const positiveTest = Number(pin) >= 0; 
-  return lengthTest && integerTest && positiveTest ? true : false;
+  const numberTest = Number(pin)+1;
+  const floatTest = pin.includes(".");
+  const negativeTest = pin.includes("-");
+  return lengthTest && numberTest && !floatTest && !negativeTest ? true : false;
 }
 
 
