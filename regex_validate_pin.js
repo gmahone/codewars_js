@@ -33,3 +33,20 @@ function validatePIN (pin) {
 }
 
 
+
+// loop solution
+function validatePIN (pin) {
+  const splitPin = pin.split("")
+  let result = true;
+  for(let i = 0; i < splitPin.length; i++){
+    console.log(Number(splitPin[i])+1);
+    if(!(Number(splitPin[i])+1)){
+      result = false;
+    }
+  }
+  if(splitPin.length != 4 && splitPin.length != 6){
+    result = false;
+  }
+  return result;
+}
+
