@@ -22,6 +22,12 @@ function validatePIN (pin) {
 // doesn't work because of negatives etc.
 
 
-
+// stepwise case solution
+function validatePIN (pin) {
+  const lengthTest = pin.length == 4 || pin.length == 6;
+  const integerTest = Number.isInteger(Number(pin));
+  const positiveTest = Number(pin) >= 0; 
+  return lengthTest && integerTest && positiveTest ? true : false;
+}
 
 
