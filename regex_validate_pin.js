@@ -47,6 +47,9 @@ function validatePIN (pin) {
   if(splitPin.length != 4 && splitPin.length != 6){
     result = false;
   }
+  if(pin.length != pin.trim().length){
+    result = false;
+  }
   return result;
 }
 
