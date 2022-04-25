@@ -8,6 +8,20 @@ function validatePIN (pin) {
   pin.split("").map(a => Number(a)+1 ? a : result = false);
   return result;
 }
+// doesn't work for all edgecases
+
+// regex example
+function validatePIN (pin) {
+  let validPinLength = pin
+    .split("")
+    .map(a => a.match(/([0-9])/ig))
+    .filter(a => Array.isArray(a))
+    .length;
+  return validPinLength == 4 || validPinLength == 6 ? true : false;
+}
+// doesn't work because of negatives etc.
+
+
 
 
 
