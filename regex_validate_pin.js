@@ -24,10 +24,11 @@ function validatePIN (pin) {
 
 // stepwise case solution
 function validatePIN (pin) {
-  const lengthTest = pin.trim().length == 4 || pin.trim().length == 6;
+  const lengthTest = pin.length == 4 || pin.length == 6;
   const numberTest = Number(pin)+1;
   const floatTest = pin.includes(".");
   const negativeTest = pin.includes("-");
+  const spaceTest = pin.includes(" ");
   return lengthTest && numberTest && !floatTest && !negativeTest ? true : false;
 }
 
