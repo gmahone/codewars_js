@@ -28,8 +28,8 @@ function validatePIN (pin) {
   const numberTest = Number(pin)+1;
   const floatTest = pin.includes(".");
   const negativeTest = pin.includes("-");
-  const spaceTest = pin.includes(" ");
-  return lengthTest && numberTest && !floatTest && !negativeTest ? true : false;
+  const trimTest = pin.trim().length == pin.length;
+  return lengthTest && numberTest && !floatTest && !negativeTest && trimTest ? true : false;
 }
 
 
