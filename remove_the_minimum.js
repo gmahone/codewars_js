@@ -10,3 +10,5 @@ function removeSmallest(numbers) {
   result.splice(numbers.indexOf(Math.min(...numbers)),1);
   return(result);
 }
+
+// simply using something like "let result = numbers" doesn't work because then both variables just point to the input array
