@@ -6,3 +6,10 @@ function repeatStr (n, s) {
   }
   return result;
 }
+
+
+// add other solutions
+
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
