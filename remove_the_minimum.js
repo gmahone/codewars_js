@@ -12,3 +12,11 @@ function removeSmallest(numbers) {
 }
 
 // simply using something like "let result = numbers" doesn't work because then both variables just point to the input array
+
+
+// other solutions
+
+function removeSmallest(numbers) {
+  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+}
