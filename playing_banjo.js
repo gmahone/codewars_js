@@ -10,3 +10,9 @@ const areYouPlayingBanjo = name => name[0].toLowerCase() === "r" ? `${name} play
 function areYouPlayingBanjo(name) {
   return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
 }
+
+
+// regex solution
+function areYouPlayingBanjo(name) {
+  return name + (/^r/i.test(name) ? " plays " : " does not play ") + "banjo";
+}
