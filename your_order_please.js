@@ -42,3 +42,9 @@ function order(words){
 function comparator(word, nextWord) {
   return +word.match(reg) - +nextWord.match(reg)
 }
+
+
+// another regex solution
+function order(words) {
+  return words.split(' ').sort((wordA, wordB) => wordA.match(/\d+/) > wordB.match(/\d+/)).join(' ')
+}
