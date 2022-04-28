@@ -11,3 +11,14 @@ function order(words){
 
 
 
+function order(words){
+  let newOrder = words.split("").filter(a => a.match(/([0-9])/)).map(a => Number(a)-1);
+  console.log(newOrder);
+  let result = [];
+  for( let i = 0 ; i < newOrder.length ; i++ ){
+   //result[i]=words.split(" ")[newOrder[i]]
+    result[i]=words.split(" ")[newOrder.indexOf(i)]
+  }
+  console.log(result);
+  return(result.join(" "));
+}
