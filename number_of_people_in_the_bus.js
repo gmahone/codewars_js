@@ -1,3 +1,7 @@
 var number = function(busStops){
-  return busStops.reduce((acc, c) => acc + c[0] - c[1], 0)
+  return busStops.reduce((acc, c) => acc + c[0] - c[1], 0);
 }
+
+
+// arrow function version
+const number = busStops => busStops.reduce((acc, c) => acc + c[0] - c[1], 0);
