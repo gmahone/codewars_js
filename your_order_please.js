@@ -22,3 +22,13 @@ function order(words){
   console.log(result);
   return(result.join(" "));
 }
+
+
+
+// other solutions
+
+function order(words){
+  return words.split(' ').sort(function(a, b){
+      return a.match(/\d/) - b.match(/\d/);
+   }).join(' ');
+} 
