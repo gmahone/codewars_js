@@ -27,8 +27,18 @@ function order(words){
 
 // other solutions
 
+// simple regex solution
 function order(words){
   return words.split(' ').sort(function(a, b){
       return a.match(/\d/) - b.match(/\d/);
    }).join(' ');
 } 
+
+// more complex regex solution
+var reg = /\d/;
+function order(words){
+  return words.split(' ').sort(comparator).join(' ');
+}
+function comparator(word, nextWord) {
+  return +word.match(reg) - +nextWord.match(reg)
+}
