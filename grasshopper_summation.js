@@ -13,3 +13,7 @@ var summation = function (num) {
   
   return result;
 }
+
+
+// math solution
+const summation = n => n * (n + 1) / 2;
