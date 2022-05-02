@@ -17,3 +17,11 @@ var summation = function (num) {
 
 // math solution
 const summation = n => n * (n + 1) / 2;
+
+
+
+// simpler reduce solution
+const summation = num => (
+  Array(num).fill(true)
+    .reduce((sum, item, index) => sum + index + 1, 0)
+);
