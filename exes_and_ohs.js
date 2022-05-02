@@ -24,3 +24,9 @@ const XO = str => {
   str = str.toLowerCase().split('');
   return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
 }
+
+
+// interesting split solution
+function XO(str) {
+    return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length;
+}
