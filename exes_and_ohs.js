@@ -5,3 +5,15 @@ function XO(str) {
 }
 
 // console.log(XO("ooxx"));
+
+
+
+
+// other solutions
+
+// regex solution
+function XO(str) {
+  let x = str.match(/x/gi);
+  let o = str.match(/o/gi);
+  return (x && x.length) === (o && o.length);
+}
