@@ -1,7 +1,7 @@
-function alphabetPosition(str){
+function alphabetPosition(text) {
   let currLetter, result = [];
-  for(let i = 0; i < str.length; i++){
-    currLetter = str[i].toUpperCase().charCodeAt()
+  for(let i = 0; i < text.length; i++){
+    currLetter = text[i].toUpperCase().charCodeAt()
     if(currLetter > 64 && currLetter < 91){
       result.push(currLetter - 64);
     }
