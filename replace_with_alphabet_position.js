@@ -23,3 +23,16 @@ function alphabetPosition(text) {
 
 // regex arrow function
 let alphabetPosition = (text) => text.toUpperCase().replace(/[^A-Z]/g, '').split('').map(ch => ch.charCodeAt(0) - 64).join(' ');
+
+
+// index solution
+function alphabetPosition(text) {
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  return text.toLowerCase().split('')
+  .filter( letter => {
+    let index = alphabet.indexOf(letter);
+    return index > -1;
+  }  )
+  .map( letter => alphabet.indexOf(letter) + 1 )
+  .join(' ')
+}
