@@ -14,3 +14,7 @@ function abbrevName(name){
     return name.split(' ').map(i => i[0].toUpperCase()).join('.')
 
 }
+
+
+// regex solution
+const abbrevName = name => name.match(/\b\w/g).join('.').toUpperCase()
