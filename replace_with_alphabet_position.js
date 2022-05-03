@@ -19,3 +19,7 @@ function alphabetPosition(text) {
     .map( (c) => c.charCodeAt() - 64)
     .join(' ');
 }
+
+
+// regex arrow function
+let alphabetPosition = (text) => text.toUpperCase().replace(/[^A-Z]/g, '').split('').map(ch => ch.charCodeAt(0) - 64).join(' ');
