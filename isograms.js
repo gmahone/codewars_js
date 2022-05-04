@@ -30,3 +30,9 @@ function isIsogram(str){
         return false;
   return true;
 }
+
+
+// solution using indexOf
+function isIsogram(str) {
+  return !str || str.toLowerCase().split('').every(function(v, i, arr) {return arr.indexOf(v) == i;});
+}
