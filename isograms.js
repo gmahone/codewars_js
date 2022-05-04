@@ -7,3 +7,9 @@ const isIsogram = str => str.toUpperCase().split("").sort().filter((a,i,arr) => 
 function isIsogram(str){
   return new Set(str.toUpperCase()).size == str.length;
 }
+
+
+// regex solution
+function isIsogram(str){ 
+  return !/(\w).*\1/i.test(str)
+}
