@@ -13,3 +13,8 @@ function isIsogram(str){
 function isIsogram(str){ 
   return !/(\w).*\1/i.test(str)
 }
+
+// other regex solution
+function isIsogram(str){
+  return !str.match(/([a-z]).*\1/i);
+}
