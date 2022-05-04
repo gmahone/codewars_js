@@ -31,3 +31,17 @@ function wave(str){
 
 // arrow function that is succinct
 var wave=w=>[...w].map((a,i)=>w.slice(0,i)+a.toUpperCase()+w.slice(i+1)).filter(a=>a!=w)
+
+
+// loop based solution
+function wave(str){
+  let newArr = [];
+  for (let i = 0; i < str.length; i++) {
+    let copy = str.split('');
+    if(copy[i] !== ' ') {
+    copy[i] = copy[i].toUpperCase()
+    newArr.push(copy.join(''))
+    }
+  }
+  return newArr
+}
