@@ -12,3 +12,9 @@ const removeExclamationMarks = s => s.split("").filter(a => a!="!").join("");
 function removeExclamationMarks(s) {
   return s.replace(/!/gi, '');
 }
+
+
+// solution using split on !
+function removeExclamationMarks(s) {
+  return s.split('!').join('');
+}
