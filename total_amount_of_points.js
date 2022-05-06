@@ -34,3 +34,7 @@ function points(games) {
   });
   return total;
 }
+
+
+// arrow function using reduce
+const points = g => g.reduce((a, [x, _, y]) => a + (x > y ? 3 : x == y), 0)
