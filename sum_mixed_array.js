@@ -12,3 +12,13 @@ const sumMix = x => x.reduce((acc, c) => acc + +c, 0);
 function sumMix(x){
   return x.map(a => +a).reduce((a, b) => a + b);
 }
+
+
+// loop based solution
+function sumMix(x){
+  let result = 0;
+  for (let n of x) {
+    result += parseInt(n);
+  }
+  return result;
+}
