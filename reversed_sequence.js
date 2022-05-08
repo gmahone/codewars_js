@@ -8,3 +8,13 @@ function reverseSeq(n){
   let result = Array(n).fill(1).map((a,i) => a + i).reverse();
   return(result);
 };
+
+
+
+// loop solution
+const reverseSeq = n => {
+let arr = [];
+  for (let i=n; i>0; i--) {
+    arr.push(i);
+    } return arr;
+};
