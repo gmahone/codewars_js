@@ -23,3 +23,6 @@ let arr = [];
 const reverseSeq = n => {
   return Array(n).fill(0).map((e, i) => n - i );
 };
+
+// array.from solution
+const reverseSeq = length => Array.from({length}, () => length--)
