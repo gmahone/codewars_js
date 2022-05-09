@@ -12,3 +12,9 @@ function solution(string) {
   return(result.join(""));
 };
 
+// other solutions
+
+// regex solution
+function solution(string) {
+  return(string.replace(/([A-Z])/g, ' $1'));
+}
