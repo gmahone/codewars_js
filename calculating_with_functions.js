@@ -15,6 +15,14 @@ function calculationInterpreter(arr){
     return(Math.floor(result));
 }
 
+function zero(x = null){
+    let result = (x ? x + "0" : "0");
+    if(result.length > 2){
+        result = (calculationInterpreter(result.split("")));
+    }
+    return(result);
+}
+
 function one(x = null){
     let result = (x ? x + "1" : "1");
     if(result.length > 2){
