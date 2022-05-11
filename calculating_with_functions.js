@@ -1,16 +1,16 @@
 function calculationInterpreter(arr){
     let result;
     if(arr[1]=="+"){
-        result = arr[2] + arr[0]
+        result = Number(arr[2]) + Number(arr[0]);
     }
     if(arr[1]=="-"){
-        result = arr[2] - arr[0]
+        result = Number(arr[2]) - Number(arr[0]);
     }
     if(arr[1]=="/"){
-        result = arr[2] / arr[0]
+        result = Number(arr[2]) / Number(arr[0]);
     }
     if(arr[1]=="*"){
-        result = arr[2] * arr[0]
+        result = Number(arr[2]) * Number(arr[0]);
     }
     return(Math.floor(result));
 }
