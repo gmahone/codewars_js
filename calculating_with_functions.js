@@ -113,6 +113,8 @@ function minus(x = null){
 
 
 // other solutions
+
+// minimal functions
 function zero(func)   { return func ? func(0) : 0; };
 function one(func)    { return func ? func(1) : 1; };
 function two(func)    { return func ? func(2) : 2; };
