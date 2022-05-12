@@ -18,3 +18,9 @@ String.prototype.toJadenCase = function () {
     return word.charAt(0).toUpperCase() + word.slice(1);
   }).join(" ");
 }
+
+
+// regex solution
+String.prototype.toJadenCase = function () {
+  return this.replace(/(^|\s)[a-z]/g, function(x){ return x.toUpperCase(); });
+};
