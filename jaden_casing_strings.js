@@ -24,3 +24,9 @@ String.prototype.toJadenCase = function () {
 String.prototype.toJadenCase = function () {
   return this.replace(/(^|\s)[a-z]/g, function(x){ return x.toUpperCase(); });
 };
+
+
+// simpler map and slice solution
+String.prototype.toJadenCase = function() {
+  return this.split(' ').map(item => item[0].toUpperCase() + item.slice(1)).join(' ')
+};
