@@ -11,3 +11,22 @@ const updateLight = current => ({
   yellow: 'red',
   red: 'green',
 })[current]
+
+
+// normal function using switch statements
+function updateLight(current){
+  switch (current) {
+    case 'green':
+      return 'yellow';
+      break;
+    case 'yellow':
+      return 'red';
+      break;
+    case 'red':
+      return 'green';
+      break;
+    default:
+      throw 'Error: incorrect input';
+      break;
+  } 
+}
