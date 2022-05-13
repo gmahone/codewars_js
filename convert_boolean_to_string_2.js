@@ -4,3 +4,7 @@ function booleanToString(b){
 
 // arrow function
 const booleanToString = b => b ? "true" : "false";
+
+
+// simple conversion
+const booleanToString = b => b.toString();
