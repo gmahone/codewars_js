@@ -34,3 +34,11 @@ function duplicateCount(text){
 function duplicateCount(text){
   return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
 }
+
+
+// non for loop solution using filter and length
+function duplicateCount(text){
+  return text.toLowerCase().split('').filter(function(val, i, arr){
+    return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
+  }).length;
+}
