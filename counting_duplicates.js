@@ -12,13 +12,16 @@
 //   - return duplicate count
 function duplicateCount(text){
   let textArray = text.toUpperCase().split("").sort();
-  let duplicateCount;
+  console.log(textArray);
+  let duplicateCount = 0;
   for(let i = 0; i < textArray.length; i++){
     let currentValue = textArray[i];
+    console.log(currentValue);
     let lastIndex = textArray.lastIndexOf(currentValue);
+    console.log(lastIndex);
     if(i !== lastIndex){
       duplicateCount++;
-      i = lastIndex + 1;
+      i = lastIndex;
     }
   }
   return(duplicateCount);
