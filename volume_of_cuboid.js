@@ -3,3 +3,11 @@ class Kata {
     return(length*width*height);
   }
 }
+
+
+// other solution
+
+// different formulation
+const Kata = {
+  getVolumeOfCuboid : (length, width, height) => length * width * height
+}
