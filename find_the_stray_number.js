@@ -28,3 +28,10 @@ function stray(numbers){
 
 // bitwise solution
 const stray = nums => nums.reduce((a, b) => a ^ b);
+
+// max min solution
+function stray(nums){
+  let max = Math.max(...nums);
+  let min = Math.min(...nums);
+  return nums.filter(x => x == max).length == 1 ? max : min
+}
