@@ -14,3 +14,13 @@ function stray(numbers) {
   let [result] = numbers.filter((a,i,arr) => arr.indexOf(a) === arr.lastIndexOf(a))
   return(result);
 }
+
+
+// other solutions
+
+// loop solution
+function stray(numbers){
+  for (var i in numbers){
+     if (numbers.indexOf(numbers[i]) === numbers.lastIndexOf(numbers[i])){return numbers[i]}
+  }
+}
