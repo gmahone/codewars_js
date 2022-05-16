@@ -7,3 +7,4 @@
 // working example
 let test1 = [1, 1, 2, 1, 1, 1, 1];
 test1.filter((a,i,arr) => arr.indexOf(a) === arr.lastIndexOf(a));
+// need to unbox the return array
