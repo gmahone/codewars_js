@@ -24,3 +24,7 @@ function stray(numbers){
      if (numbers.indexOf(numbers[i]) === numbers.lastIndexOf(numbers[i])){return numbers[i]}
   }
 }
+
+
+// bitwise solution
+const stray = nums => nums.reduce((a, b) => a ^ b);
