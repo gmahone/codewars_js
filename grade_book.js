@@ -28,3 +28,10 @@ function getGrade (s1, s2, s3) {
     else if (avg < 90) return "B";
     else return "A";
 }
+
+
+// terrible nested ternary solution
+function getGrade (s1, s2, s3) {
+  var s = (s1 + s2 + s3) / 3
+  return s >= 90 ? "A" : s >= 80 ? "B" : s >= 70 ? "C" : s >= 60 ? "D" : "F"
+}
