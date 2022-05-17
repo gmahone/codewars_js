@@ -53,3 +53,7 @@ function getGrade (s1, s2, s3) {
      return 'F';   
  }
 }
+
+
+// interesting indexing solution
+var getGrade=(a,b,c)=>'FFFFFFDCBAA'.charAt((a+b+c)/3/10);
