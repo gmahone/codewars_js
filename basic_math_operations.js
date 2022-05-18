@@ -1,12 +1,12 @@
-function applyOperations(operation, a, b){
+function basicOp(operation, value1, value2)
   switch(operation){
     case "+":
-      return(a+b);
+      return(value1+value2);
     case "-":
-      return(a-b);
+      return(value1-value2);
     case "*":
-      return(a*b);
+      return(value1*value2);
     case "/":
-      return(a/b);
+      return(value1/value2);
   }
 }
