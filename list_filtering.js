@@ -2,6 +2,8 @@ function filter_list(l) {
   return(l.filter(a => Number.isInteger(a)));
 }
 
+// arrow function version
+const filter_list = l => l.filter(a => Number.isInteger(a));
 
 // other solutions
 
