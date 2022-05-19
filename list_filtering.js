@@ -12,3 +12,5 @@ function filter_list(l) {
   return l.filter(function(v) {return typeof v == 'number'})
 }
 
+const filter_list = l => l.filter(a => typeof a == "number")
+
