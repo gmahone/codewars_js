@@ -15,3 +15,7 @@ function arrayDiff(a, b){
 function array_diff(a, b) {
   return a.filter(e => !b.includes(e));
 }
+// another
+function array_diff(a, b) {
+  return a.filter(function(x) { return b.indexOf(x) == -1; });
+}
