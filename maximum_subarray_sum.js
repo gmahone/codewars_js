@@ -34,7 +34,7 @@ var maxSequence = function(arr){
   let subArraySum;
   let result = 0;
   for(i = 0; i < arr.length; i++){
-    for(j = (arr.length - 1); j > i; j--){
+    for(j = arr.length; j > i; j--){
       let subArraySum = arr.slice(i,j).reduce((acc,c) => acc + c);
       if(subArraySum > result){
         result = subArraySum;
