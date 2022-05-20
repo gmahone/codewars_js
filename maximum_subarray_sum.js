@@ -19,7 +19,7 @@ function maxSequence(array){
   let subArraySum;
   let result = 0;
   for(i = 0; i < array.length; i++){
-    for(j = (array.length - 1); i > j; j--){
+    for(j = (array.length - 1); j > i; j--){
       let subArraySum = array.slice(i,j).reduce((acc,c) => acc + c);
       if(subArraySum > result){
         result = subArraySum;
