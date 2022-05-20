@@ -29,3 +29,17 @@ function maxSequence(array){
   return(result);
 }
 
+// submitted solution
+var maxSequence = function(arr){
+  let subArraySum;
+  let result = 0;
+  for(i = 0; i < arr.length; i++){
+    for(j = (arr.length - 1); j > i; j--){
+      let subArraySum = arr.slice(i,j).reduce((acc,c) => acc + c);
+      if(subArraySum > result){
+        result = subArraySum;
+      }
+    }
+  }
+  return(result);
+}
