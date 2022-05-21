@@ -7,4 +7,15 @@
 //  - foo -> foo1
 //  - foobar23 -> foobar24
 //  - foo0042 -> foo0043
-
+// pseudocode:
+//  first loop over string
+//  for i..n in string
+//   check if/where the first number is
+//   if no number:
+//    return string + 1
+//   else is number:
+//    find out if string is padded
+//    if converted number length equals string number length
+//     return string + (number as number + 1)
+//    else string number is padded
+//     return string + (padded number + 1)
