@@ -43,5 +43,30 @@ function incrementer(str){
   }
   return result;
 }
-  
+
+// add submitted solution
+function incrementString (strng) {
+  let result, currCharCode, subString, subNumber;
+  let lastStringIndex = strng.length - 1
+  for(let i = 0; i < strng.length; i++){
+    currCharCode = strng[i].charCodeAt();
+    if(currCharCode >= 48 && currCharCode <= 57){
+      lastStringIndex = i - 1;
+      break;
+    }
+  }
+  if(lastStringIndex === (strng.length - 1)){
+    result = strng + 1;
+  } else {
+    subString = strng.substring(0,lastStringIndex + 1);
+    subNumber = strng.substring(lastStringIndex + 1);
+    if(subNumber.length === String(Number(subNumber)).length){
+      result = subString + String(Number(subNumber) + 1);
+    } else {
+      result = subString + String(Number(subNumber) + 1).padStart(subNumber.length, "0");
+    }
+  }
+  return result;
+}
+
 
