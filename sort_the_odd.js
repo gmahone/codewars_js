@@ -21,5 +21,24 @@
 //  return resorted array
 
 function sortArray(array) {
-  // Return a sorted array.
+  let currentOdd;
+  let previousIndex = 0;
+  let previousValue;
+  let currentIndex = 0;
+  let currentValue;
+  while(true){
+    if(array[currentIndex] & 0x1 && array[currentIndex] > array[previousIndex]){
+      previousValue = array[previousIndex]
+      currentValue = array[currentIndex]
+      array.splice(previousIndex, 0, currentValue);
+      array.splice(currentIndex, 0, previousValue);
+      previousIndex = 0;
+      currentIndex = 0;
+    } else if(array[currentIndex] & 0x1){
+      previousIndex = currentIndex;
+    } else {
+      currentIndex += 1;
+    }
+  }
+  return(array);
 }
