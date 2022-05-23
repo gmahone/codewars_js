@@ -27,6 +27,9 @@ function sortArray(array) {
   let currentIndex = 0;
   let currentValue;
   while(true){
+    if(currentIndex === array.length){
+      break
+    }
     if(array[currentIndex] & 0x1 && array[currentIndex] > array[previousIndex]){
       previousValue = array[previousIndex]
       currentValue = array[currentIndex]
