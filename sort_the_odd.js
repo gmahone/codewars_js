@@ -19,3 +19,7 @@
 //   if reaches the end with no swap
 //    break while
 //  return resorted array
+
+function sortArray(array) {
+  // Return a sorted array.
+}
