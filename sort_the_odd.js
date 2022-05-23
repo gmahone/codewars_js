@@ -30,7 +30,7 @@ function sortArray(array) {
     if(currentIndex === array.length){
       break
     }
-    if(array[currentIndex] & 0x1 && array[currentIndex] > array[previousIndex]){
+    if(array[currentIndex] & 0x1 && array[currentIndex] < array[previousIndex]){
       previousValue = array[previousIndex]
       currentValue = array[currentIndex]
       array.splice(previousIndex, 0, currentValue);
