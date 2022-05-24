@@ -57,11 +57,12 @@ function sortArray(array) {
 //  return array
 function sortArray(array) {
   let oddValues = array.filter(a => a & 0x1)
-  let oddIndices = oddValues.map(a => array.indexOf(a))
-  let result = array;
+  let insertAt;
   oddValues.sort((a,b) => a - b);
-  for(let i = 0; i < oddValues.length; i++){
-    result.splice(oddIndices[i], 1, oddValues[i])
+  for(let i = 0; i < array.length; i++){
+    if(array[i] & 0x1){
+      array.splice(i, 1, oddValues.shift())
+    }
   }
-  return result;
+  return array;
 }
