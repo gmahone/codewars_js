@@ -65,3 +65,11 @@ function sortArray(array) {
   }
   return array;
 }
+
+// other solutions
+
+// shorter solution - using filter then map
+function sortArray(array) {
+  const odd = array.filter((x) => x % 2).sort((a,b) => a - b);
+  return array.map((x) => x % 2 ? odd.shift() : x);
+}
