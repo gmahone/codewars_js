@@ -55,3 +55,13 @@ function sortArray(array) {
 //  loop over sorted odd value array length
 //   for each item, splice odd value into array at current odd value index
 //  return array
+function sortArray(array) {
+  let oddValues = array.filter(a => a & 0x1)
+  let oddIndices = oddValues.map(a => array.indexOf(a))
+  let result = array;
+  oddValues.sort();
+  for(let i = 0; i < oddValues.length; i++){
+    result.splice(oddIndices[i], 1, oddValues[i])
+  }
+  return result;
+}
