@@ -20,6 +20,7 @@
 //    break while
 //  return resorted array
 
+// this does not work as is
 function sortArray(array) {
   let currentOdd;
   let previousIndex = 0;
@@ -45,3 +46,12 @@ function sortArray(array) {
   }
   return(array);
 }
+
+
+// a new approach
+// pseudocode:
+//  filter the odd values from array
+//  filter the odd value indices from array
+//  loop over sorted odd value array length
+//   for each item, splice odd value into array at current odd value index
+//  return array
