@@ -57,7 +57,6 @@ function sortArray(array) {
 //  return array
 function sortArray(array) {
   let oddValues = array.filter(a => a & 0x1)
-  let insertAt;
   oddValues.sort((a,b) => a - b);
   for(let i = 0; i < array.length; i++){
     if(array[i] & 0x1){
