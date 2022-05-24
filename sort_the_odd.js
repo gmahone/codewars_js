@@ -59,7 +59,7 @@ function sortArray(array) {
   let oddValues = array.filter(a => a & 0x1)
   let oddIndices = oddValues.map(a => array.indexOf(a))
   let result = array;
-  oddValues.sort();
+  oddValues.sort((a,b) => a - b);
   for(let i = 0; i < oddValues.length; i++){
     result.splice(oddIndices[i], 1, oddValues[i])
   }
