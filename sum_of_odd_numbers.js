@@ -7,6 +7,7 @@ function pyramidSize(n) {
   }
 }
 
+/*
 function pyramidSum(n){
   let rowValue = pyramidSize(n) * 2 - 1;
   let result = 0;
@@ -16,3 +17,15 @@ function pyramidSum(n){
   }
   return result;
 }
+*/
+
+function rowSumOddNumbers(n) {
+	let rowValue = pyramidSize(n) * 2 - 1;
+  let result = 0;
+  for(let i = 0; i < n; i++){
+    result += rowValue;
+    rowValue -= 2;
+  }
+  return result;
+}
+
