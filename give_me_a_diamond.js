@@ -17,11 +17,14 @@
 function drawDiamond(n){
   let spacePadding;
   let asteriskNumber;
-  let resultDiamond;
-  for(let i = 0; i < (n+1); i++){
-    spacePadding = Math.max(i, (n-1)/i) - Math.min(i, (n-1)/i);
-    asteriskNumber = (((n-1)/2) - n % i);
-    resultDiamond += " ".repeat(spacePadding) + "*".repeat(asteriskNumber) + "\n"
+  let resultDiamond = "";
+  for(let i = 1; i < (n+1); i++){
+    //spacePadding = Math.max(i-1, (n-1)/2) - Math.min(i-1, (n-1)/2);
+    spacePadding = (((n-1)/2) - n % i);
+    asteriskNumber = n - spacePadding*2;
+    //asteriskNumber = (n % i);
+    console.log(spacePadding, asteriskNumber);
+    resultDiamond += " ".repeat(spacePadding) + "*".repeat(asteriskNumber) + "\n";
   }
   return(resultDiamond);
 }
