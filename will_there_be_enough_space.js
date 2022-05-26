@@ -12,3 +12,6 @@ const enough = (cap, on, wait) => (on + wait - cap) > 0 ? (on + wait - cap) : 0;
 function enough(cap, on, wait) {
   return Math.max(wait + on - cap, 0);
 }
+
+// arrow function with max switch
+const enough = (cap, on, wait) => Math.max(0,wait-cap+on);
