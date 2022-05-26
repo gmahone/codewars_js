@@ -5,3 +5,10 @@ function enough(cap, on, wait) {
 
 // arrow function version
 const enough = (cap, on, wait) => (on + wait - cap) > 0 ? (on + wait - cap) : 0;
+
+// other solutions
+
+// using max switching
+function enough(cap, on, wait) {
+  return Math.max(wait + on - cap, 0);
+}
