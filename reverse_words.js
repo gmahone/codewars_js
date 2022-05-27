@@ -5,4 +5,5 @@
 function reverseWords(str) {
   let splitWords = str.split(" ").map(a => a.trim());
   console.log(splitWords);
+  console.log(str);
 }
