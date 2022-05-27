@@ -3,5 +3,5 @@
 // using regex, can avoid trim with "this is a  test".split(/\s+/)
 
 function reverseWords(str) {
-  // Go for it
+  return str.split(" ").trim();
 }
