@@ -9,3 +9,5 @@ function reverseWords(str) {
   }
   return str;
 }
+// the solution above is fine without a mirrored pair but fails on "stressed desserts"
+// need to find a new solution
