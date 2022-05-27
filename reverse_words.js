@@ -5,7 +5,7 @@
 function reverseWords(str) {
   let splitWords = str.split(" ").map(a => a.trim());
   for(let i = 0; i < splitWords.length; i++){
-    str.replace(splitWords[i], splitWords[i].split("").reverse().join(""));
+    str = str.replace(splitWords[i], splitWords[i].split("").reverse().join(""));
   }
   return str;
 }
