@@ -30,6 +30,7 @@ function reverseWords(str) {
   let withinWord = false;
   let result = "";
   for(let i = 0; i < str.length; i++){
+    console.log(i);
     if(str[i].charCodeAt() !== 32 && !withinWord){
       wordBegin = i;
       withinWord = true;
