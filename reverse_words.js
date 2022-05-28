@@ -41,7 +41,7 @@ function reverseWords(str) {
     } else if(str[i].charCodeAt === 32 && !withinWord){
       result += " ";
     } else {
-      next;
+      continue;
     }
   }
   return result
