@@ -33,12 +33,12 @@ function reverseWords(str) {
     if(str[i].charCodeAt() !== 32 && !withinWord){
       wordBegin = i;
       withinWord = true;
-    } else if(str[i].charCodeAt === 32 && withinWord){
+    } else if(str[i].charCodeAt() === 32 && withinWord){
       wordEnd = i;
       withinWord = false;
       currWord = str.split("").slice(wordBegin, wordEnd).reverse().join("");
       result += currWord + " ";
-    } else if(str[i].charCodeAt === 32 && !withinWord){
+    } else if(str[i].charCodeAt() === 32 && !withinWord){
       result += " ";
     } else {
       continue;
