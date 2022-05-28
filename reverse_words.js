@@ -66,3 +66,8 @@ function reverseWords(str) {
     return word.split('').reverse().join('');
   }).join(' ');
 }
+
+// simpler solution
+function reverseWords(str) {
+  return str.split("").reverse().join("").split(" ").reverse().join(" ");
+}
