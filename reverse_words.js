@@ -41,7 +41,13 @@ function reverseWords(str) {
       result += currWord + " ";
     } else if(str[i].charCodeAt() === 32 && !withinWord){
       result += " ";
-    } else if( i === (str.length - 1)) {
+    } else if( i === (str.length - 1)  && !withinWord) {
+      wordBegin = i;
+      wordEnd = i+1;
+      withinWord = false;
+      currWord = str.split("").slice(wordBegin, wordEnd).reverse().join("");
+      result += currWord;
+    } else if( i === (str.length - 1)  && withinWord) {
       wordEnd = i+1;
       withinWord = false;
       currWord = str.split("").slice(wordBegin, wordEnd).reverse().join("");
