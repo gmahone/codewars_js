@@ -42,6 +42,7 @@ function reverseWords(str) {
       result += " ";
     } else {
       next;
+    }
   }
   return result
 }
