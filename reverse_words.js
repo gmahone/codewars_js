@@ -26,10 +26,17 @@ function reverseWords(str) {
 //    next
 //  return result string
 function reverseWords(str) {
-  let wordBegin, wordEnd;
+  let wordBegin, wordEnd, currWord;
   let withinWord = false;
   let result = "";
-  for(let i = 0; i < str.length){
-    
+  for(let i = 0; i < str.length; i++){
+    if(str[i].charCodeAt() !== 32 && !withinWord){
+      wordBegin = i;
+      withinWord = true;
+    } else if(str[i].charCodeAt === 32 && withinWord){
+      wordEnd = i;
+      withinWord = false;
+      currWord = str.split("").slice(wordBegin, wordEnd).reverse()
+      str.split("").splice(wordBegin, wordEnd - wordBegin, currWord)
   }
 }
