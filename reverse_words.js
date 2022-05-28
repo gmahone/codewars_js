@@ -56,3 +56,13 @@ function reverseWords(str) {
   }
   return result
 }
+
+// other solutions
+
+// so my solution is way overly complicated because i thought multiple spaces would break the easy solution
+// but it works with the easy solution :(
+function reverseWords(str) {
+  return str.split(' ').map(function(word){
+    return word.split('').reverse().join('');
+  }).join(' ');
+}
