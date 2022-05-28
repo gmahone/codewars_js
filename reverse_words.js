@@ -44,7 +44,6 @@ function reverseWords(str) {
     } else if( i === (str.length - 1)  && !withinWord) {
       wordBegin = i;
       wordEnd = i+1;
-      withinWord = false;
       currWord = str.split("").slice(wordBegin, wordEnd).reverse().join("");
       console.log(currWord);
       result += currWord;
