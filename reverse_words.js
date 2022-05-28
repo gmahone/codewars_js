@@ -55,6 +55,7 @@ function reverseWords(str) {
     } else {
       continue;
     }
+    console.log(withinWord);
   }
   return result
 }
