@@ -11,7 +11,6 @@ function nbDig(n, d) {
     let dCount = 0;
     for(let i = 0; i < (n + 1); i++){
         let temp = String(i * i).split("").filter(a => a === String(d)).length;
-        console.log(temp);
         dCount += temp;
     }
     return dCount;
