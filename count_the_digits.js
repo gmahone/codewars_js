@@ -6,6 +6,7 @@
 //  end loop
 //  return count of d
 
+
 function nbDig(n, d) {
     let dCount = 0;
     for(let i = 0; i < (n + 1); i++){
