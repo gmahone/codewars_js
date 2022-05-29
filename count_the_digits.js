@@ -16,3 +16,13 @@ function nbDig(n, d) {
     return dCount;
 }
 // solution takes awhile but works
+
+// other solutions
+// solution using forEach
+function nbDig(n, d) {
+var res=0;
+    for (var g=0;g<=n;g++){
+      var square=(g*g+"").split("");
+      square.forEach((s)=>s==d?res++:null)
+    }return res;
+}
