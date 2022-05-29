@@ -35,3 +35,10 @@ function nbDig(n, d) {
     }
   return o.split(d).length-1
 }
+
+// add solution using regex
+function nbDig(n, d) {
+  var squares = '', reg = new RegExp(d, 'g');
+  for (var i = 0; i <= n; i++) { squares += (i * i); }
+  return squares.match(reg).length;
+}
