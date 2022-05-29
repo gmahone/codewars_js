@@ -16,3 +16,4 @@ function nbDig(n, d) {
     }
     return dCount;
 }
+// solution takes awhile but works
