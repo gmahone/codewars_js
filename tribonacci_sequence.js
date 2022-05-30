@@ -4,5 +4,5 @@ function tribonacci(signature,n){
     triSum = signature.filter((a,ind) => ind > i).reduce((acc,c) => acc + c);
     signature.push(triSum);
   }
-  return signature;
+  return signature.slice(0,n);
 }
