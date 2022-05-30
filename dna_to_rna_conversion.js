@@ -1,5 +1,5 @@
 function DNAtoRNA(dna) {
-  // create a function which returns an RNA sequence from the given DNA sequence
+  return dna.replaceAll("T", "U");
 }
 
-const conversion = dna => dna.replaceAll("T", "U");
+const DNAtoRNA = dna => dna.replaceAll("T", "U");
