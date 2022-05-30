@@ -14,3 +14,8 @@ const DNAtoRNA = dna => dna.split("").map(a => a.replace("T", "U")).join("");
 function DNAtoRNA(dna){
   return dna.replace(/T/g, 'U');
 }
+
+// split join solution
+function DNAtoRNA(dna) {
+  return dna.split("T").join("U");
+}
