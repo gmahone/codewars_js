@@ -1,5 +1,8 @@
 function gooseFilter (birds) {
+  let result = birds;
   var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
-  
-  // return an array containing all of the strings in the input array except those that match strings in geese
+  for(let i = 0; i < geese.length; i++){
+    result = result.filter(a => a !== geese[i]);
+  }
+  return result;
 };
