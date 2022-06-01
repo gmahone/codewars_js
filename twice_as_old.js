@@ -11,3 +11,11 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   }
   return Math.abs(result);
 }
+
+
+// add other solutions
+
+// easy math solution
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
