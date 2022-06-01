@@ -19,3 +19,6 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - 2 * sonYearsOld);
 }
+
+// arrow function math solution
+const twiceAsOld = (d, s) => Math.abs(d - 2 * s);
