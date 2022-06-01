@@ -9,5 +9,5 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
       break
     }
   }
-  return result;
+  return Math.abs(result);
 }
