@@ -10,3 +10,6 @@ const getAge = inputString => Number(inputString[0]);
 function getAge(inputString){
   return parseInt(inputString);
 }
+
+// arrow function version
+const getAge = parseInt;
