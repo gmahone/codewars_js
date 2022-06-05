@@ -1,3 +1,7 @@
 function domainName(url){
-  //your code here
+  let subUrl = url.split("://")[1];
+  subUrl = subUrl.split("www.");
+  subUrl = subUrl[subUrl.length - 1];
+  subUrl = subUrl.split(".")[0];
+  return subUrl;
 }
