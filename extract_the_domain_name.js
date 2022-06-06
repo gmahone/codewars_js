@@ -24,3 +24,8 @@ function domainName(url){
              .replace('www.', '')
              .split('.')[0];
 }
+
+// regex solution
+function domainName(url){
+  return url.match(/(?:http(?:s)?:\/\/)?(?:w{3}\.)?([^\.]+)/i)[1];
+}
