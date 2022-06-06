@@ -6,3 +6,13 @@ function domainName(url){
   subUrl = subUrl.split(".")[0];
   return subUrl;
 }
+
+// other solutions
+
+// solution with replaces then split
+function domainName(url){
+  url = url.replace("https://", '');
+  url = url.replace("http://", '');
+  url = url.replace("www.", '');
+  return url.split('.')[0];
+};
