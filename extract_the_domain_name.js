@@ -16,3 +16,11 @@ function domainName(url){
   url = url.replace("www.", '');
   return url.split('.')[0];
 };
+
+// direct return of replaces with split
+function domainName(url){
+  return  url.replace('http://', '')
+             .replace('https://', '')
+             .replace('www.', '')
+             .split('.')[0];
+}
