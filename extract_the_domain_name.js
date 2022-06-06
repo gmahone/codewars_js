@@ -35,3 +35,8 @@ function domainName(url){
   return url.replace(/(https?:\/\/)?(www\.)?/, '').split('.')[0]
 }
 
+// yet another regex solution
+function domainName(url){  
+  return url.replace(/.+\/\/|www.|\..+/g, '')
+}
+
