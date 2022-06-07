@@ -1,3 +1,8 @@
 function calculateYears(principal, interest, tax, desired) {
-    // your code
+    let i = 0;
+    while(principal < desired){
+        principal += (principal * interest - tax);
+        i += 1;
+    }
+    return i;
 }
