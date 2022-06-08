@@ -20,3 +20,11 @@ function getMiddle(s) {
 function getMiddle(s) {
   return s.slice((s.length-1)/2, s.length/2+1);
 }
+
+// return ternary
+function getMiddle(s) {
+  let middle = s.length / 2;
+  return (s.length % 2) 
+    ? s.charAt(Math.floor(middle))
+    : s.slice(middle - 1, middle + 1);
+}
