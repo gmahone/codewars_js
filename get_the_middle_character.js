@@ -7,3 +7,11 @@ function getMiddle(s) {
   }
   return result;
 }
+
+
+// other solutions
+
+// substring ternary solution
+function getMiddle(s) {
+  return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+}
