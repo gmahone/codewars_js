@@ -7,3 +7,15 @@ function countBy(x, n) {
   }
   return z;
 }
+
+
+// add other solutions
+
+// solution with index multiplication
+function countBy(x, n) {
+    var z = [];
+    for (i = 1; i <= n; i++) {
+        z.push(x * i);
+    }
+    return z;
+}
