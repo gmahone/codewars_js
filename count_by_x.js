@@ -29,3 +29,6 @@ function countBy(x, n) {
   }
   return z
 }
+
+// arrow function with Array
+const countBy = (x, n) => Array.from({length: n}, (v, k) => (k + 1) * x)
