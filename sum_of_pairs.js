@@ -3,8 +3,8 @@ function sumPairs(ints, s) {
   for(let i = 0; i < ints.length; i++){
     let currDiff = s - ints[i];
     if(pairMap.hasOwnProperty(currDiff)){
-      return(s - currDiff, currDiff)
+      return([currDiff, s - currDiff])
     }
-    currMap[ints[i]] = i
+    pairMap[ints[i]] = i
   }
 }
