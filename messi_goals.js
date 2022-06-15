@@ -2,4 +2,4 @@ var laLigaGoals
 var championsLeagueGoals
 var copaDelReyGoals
 
-var totalGoals
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
