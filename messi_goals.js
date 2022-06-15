@@ -31,4 +31,8 @@ const countGoals = (arr) => {
   return sum;
 }
 
+// alternative using reduce
+const countGoals = (arr) => arr.reduce((acc,c) => acc + c)
+// end alternative code
+
 var totalGoals = countGoals(goalScoringStatistics);
