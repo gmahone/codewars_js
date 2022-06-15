@@ -1,1 +1,3 @@
-
+function hello(name) {
+  return '';
+}
