@@ -8,5 +8,8 @@ function dutyFree(normPrice, discount, hol){
 
 // simpler formulation
 function dutyFree(normPrice, discount, hol){
-  return(Math.floor(hol / normPrice / discount * 100))
+  return(Math.floor( hol / normPrice / discount * 100 ))
 }
+
+// arrow function version
+const dutyFree = (normPrice, discount, hol) => Math.floor( hol / normPrice / discount * 100 )
