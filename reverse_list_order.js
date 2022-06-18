@@ -1,3 +1,6 @@
 function reverseList(list) {
-  return list.reverse()
+  return list.reverse();
 }
+
+// arrow function version
+const reverseList = list => list.reverse();
