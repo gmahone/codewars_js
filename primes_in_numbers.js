@@ -31,6 +31,7 @@ function primeFactors(n){
             }
         }
     }
-    console.log(divArray.sort)
+    divArray.sort
+    console.log(divArray)
     return divArray
 }
