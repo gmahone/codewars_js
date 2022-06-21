@@ -26,7 +26,8 @@ function primeFactors(n){
     while(n != 1){
         for(i = 2; i < n; i++){
             if(n % i == 0 && isPrime(n)){
-                remainder /= n
+                divArray.push(i)
+                n /= i;
             }
         }
     }
