@@ -25,7 +25,7 @@ function primeFactors(n){
     let i, j, stillPrime
     while(n != 1){
         for(i = 2; i < n; i++){
-            if(n % i == 0 && isPrime(n)){
+            if(n % i == 0 && isPrime(i)){
                 divArray.push(i)
                 n /= i;
             }
