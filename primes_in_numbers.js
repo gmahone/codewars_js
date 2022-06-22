@@ -21,17 +21,20 @@ function isPrime(x){
 
 
 function primeFactors(n){
-    let divArray = []
+    let divMap = {}
     let i, j, stillPrime
     while(n != 1){
         for(i = 2; i < n+1; i++){
             if(n % i == 0 && isPrime(i)){
-                divArray.push(i)
+                if(divMap.hasProperty(i)){
+                    divMap[i] = 1
+                } else {
+                    divMap[i] += 1
+                }
                 n /= i;
             }
         }
     }
-    divArray.sort
-    console.log(divArray)
-    return divArray
+    console.log(divMap)
+    return divMap
 }
