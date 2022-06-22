@@ -9,36 +9,35 @@
 // sort array
 // loop over array, crunching the same numbers and creating output string
 function isPrime(x){
-    let isPrime = true
+    let isPrime = true;
     for (let i = 2; i < x; i++) {
         if (x % i == 0) {
             isPrime = false;
             break;
         }
     }
-    return isPrime
+    return isPrime;
 }
 
 
 function primeFactors(n){
-    let divMap = {}
-    let i, j, stillPrime
-    let result = ""
+    let divMap = {};
+    let i, j, stillPrime;
+    let result = "";
     while(n != 1){
         for(i = 2; i < n+1; i++){
             if(n % i == 0 && isPrime(i)){
                 if(divMap.hasOwnProperty(i)){
-                    divMap[i] += 1
+                    divMap[i] += 1;
                 } else {
-                    divMap[i] = 1
+                    divMap[i] = 1;
                 }
                 n /= i;
             }
         }
     }
-    for(i = 0, i < Object.keys(divMap).length; i++){
-        result += `({Object.keys(divMap)[i]}**{Object.values(divMap)[i]}))`
+    for(i = 0; i < Object.keys(divMap).length; i++){
+        result += `(${Object.keys(divMap)[i]}**${Object.values(divMap)[i]})`;
     }
-    console.log(result)
-    return result
+    return result.split("**1").join("");
 }
