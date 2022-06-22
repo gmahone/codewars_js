@@ -36,7 +36,9 @@ function primeFactors(n){
             }
         }
     }
-    console.log(divMap)
     for(i = 0, i < Object.keys(divMap).length; i++){
-        result += `({Object.keys(divMap)[i]}
+        result += `({Object.keys(divMap)[i]}**{Object.values(divMap)[i]}))`
+    }
+    console.log(result)
+    return result
 }
