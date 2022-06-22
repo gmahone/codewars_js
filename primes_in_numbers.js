@@ -23,6 +23,7 @@ function isPrime(x){
 function primeFactors(n){
     let divMap = {}
     let i, j, stillPrime
+    let result = ""
     while(n != 1){
         for(i = 2; i < n+1; i++){
             if(n % i == 0 && isPrime(i)){
@@ -36,5 +37,6 @@ function primeFactors(n){
         }
     }
     console.log(divMap)
-    return divMap
+    for(i = 0, i < Object.keys(divMap).length; i++){
+        result += `({Object.keys(divMap)[i]}
 }
