@@ -27,9 +27,9 @@ function primeFactors(n){
         for(i = 2; i < n+1; i++){
             if(n % i == 0 && isPrime(i)){
                 if(divMap.hasOwnProperty(i)){
-                    divMap[i] = 1
-                } else {
                     divMap[i] += 1
+                } else {
+                    divMap[i] = 1
                 }
                 n /= i;
             }
