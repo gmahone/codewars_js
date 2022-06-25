@@ -22,4 +22,5 @@ greetingMap = {
 }
 
 function greet(language) {
+	return greetingMap[language];
 }
