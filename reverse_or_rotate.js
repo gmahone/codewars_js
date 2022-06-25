@@ -1,9 +1,10 @@
 function revrot(str, sz) {
     let resultArray = []
-    if(sz > str.length){
+    if(sz === 0 || sz > str.length){
         return "";
     }
-    let loopLength = str.length % sz;
+    let loopLength = Math.floor(str.length / sz);
+    console.log(str.length, sz, loopLength)
     let tempStr;
     for(let i = 0; i < loopLength; i++){
         tempStr = str.substring(0, sz).split("").map(a => Number(a));
