@@ -15,7 +15,7 @@ greetingMap = {
 	"polish": "Witamy",
 	"spanish": "Bienvenido",
 	"swedish": "Valkommen",
-	"welsh": "Croeso"
+	"welsh": "Croeso",
 	"IP_ADDRESS_INVALID": "Welcome",
 	"IP_ADDRESS_NOT_FOUND": "Welcome",
 	"IP_ADDRESS_REQUIRED": "Welcome"
