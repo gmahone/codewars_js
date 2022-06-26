@@ -9,3 +9,9 @@ function remove (string) {
 
 // regex solution
 const remove = s => s.replace(/!$/, '');
+
+
+// using endsWith, ternary, and slice
+function remove(string) {
+  return string.endsWith('!') ? string.slice(0, -1) : string;
+}
