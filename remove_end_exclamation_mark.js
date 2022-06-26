@@ -15,3 +15,8 @@ const remove = s => s.replace(/!$/, '');
 function remove(string) {
   return string.endsWith('!') ? string.slice(0, -1) : string;
 }
+
+// similar solution as above but with charAt
+function remove(string){
+  return string.charAt(string.length - 1) === '!' ? string.slice(0, -1) : string; 
+}
