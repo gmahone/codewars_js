@@ -1,4 +1,6 @@
 function remove (string) {
-  //coding and coding....
-  return '';
+  if(string[string.length - 1] === "!"){
+    string.pop();
+  }
+  return string;
 }
