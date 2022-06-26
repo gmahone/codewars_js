@@ -4,3 +4,8 @@ function remove (string) {
   }
   return string;
 }
+
+// other solutions
+
+// regex solution
+const remove = s => s.replace(/!$/, '');
