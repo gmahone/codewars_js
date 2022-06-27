@@ -57,3 +57,11 @@ function Ball(ballType){
 var Ball = function(ballType) {
   this.ballType = ballType || 'regular';
 };
+
+
+// class solution
+class Ball {
+  constructor(ballType = "regular") {
+    this.ballType = ballType;
+  }
+}
