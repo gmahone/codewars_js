@@ -71,3 +71,9 @@ class Ball {
 var Ball = function(ballType) {
     this.ballType = typeof ballType !== 'undefined' ? ballType : 'regular';
 };
+
+
+// add solution using a default
+var Ball = function(ballType = "regular") {
+  this.ballType = ballType;
+};
