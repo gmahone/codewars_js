@@ -52,3 +52,8 @@ function Ball(ballType){
     this.ballType = "super";
   };
 };
+
+// solution with ||
+var Ball = function(ballType) {
+  this.ballType = ballType || 'regular';
+};
