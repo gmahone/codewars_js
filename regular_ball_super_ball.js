@@ -65,3 +65,9 @@ class Ball {
     this.ballType = ballType;
   }
 }
+
+
+// solution using typeof ternary
+var Ball = function(ballType) {
+    this.ballType = typeof ballType !== 'undefined' ? ballType : 'regular';
+};
