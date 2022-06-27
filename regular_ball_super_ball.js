@@ -1,3 +1,4 @@
+/** non-working solutions
 var Ball = function(ballType) {
   return "";
 };
@@ -41,3 +42,13 @@ function Ball(ballType){
       return this.ballType === "super" ? "super" : "regular";  
   }
 }
+**/
+
+// working solution
+function Ball(ballType){
+  if(ballType === undefined){
+    this.ballType = "regular";
+  } else {
+    this.ballType = "super";
+  };
+};
