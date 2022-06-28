@@ -1,3 +1,3 @@
 function positiveSum(arr) {
-  return arr.reduce((acc,c) => acc + Math.abs(c));
+  return arr.filter(e => e > 0).reduce((acc,c) => acc + c, 0);
 }
