@@ -1,1 +1,3 @@
-
+function oddOrEven(array) {
+   result "";
+}
