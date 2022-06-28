@@ -1,4 +1,4 @@
 function oddOrEven(array) {
-   let result = array.reduce((acc,c) => acc + c);
-   return result % 0 ? "even" : "odd";
+   let result = array.reduce((acc,c) => acc + c, 0);
+   return result % 2 == 0 ? "even" : "odd";
 }
