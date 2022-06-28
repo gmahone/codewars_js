@@ -1,1 +1,3 @@
-
+function positiveSum(arr) {
+  return "";
+}
