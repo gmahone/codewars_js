@@ -7,3 +7,6 @@ function oddOrEven(array) {
 function oddOrEven(arr) {
   return arr.reduce((acc,c) => acc+c, 0) % 2 ? "odd" : "even";
 }
+
+// arrow function version
+const oddOrEven = arr => arr.reduce((acc,c) => acc+c, 0) % 2 ? "odd" : "even";
