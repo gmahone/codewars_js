@@ -1,1 +1,3 @@
-
+function accum(s) {
+	return "";
+}
