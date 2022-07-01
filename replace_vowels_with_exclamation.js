@@ -11,3 +11,9 @@ function replace(s){
   s = s.replace(vowels, "!");
   return s; 
 }
+
+
+// simpler
+function replace(s){
+  return s.replace(/[aeoiu]/ig, '!')  
+}
