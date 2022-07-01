@@ -1,3 +1,5 @@
 function replace(s){
-  return ""; 
+  let vowels = "AEIOUaeiou".split("");
+  vowels.map(a => s.replaceAll(s, "!");
+  return s; 
 }
