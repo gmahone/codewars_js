@@ -1,1 +1,3 @@
-
+function replace(s){
+  return ""; 
+}
