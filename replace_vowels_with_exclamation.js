@@ -3,3 +3,11 @@ function replace(s){
   vowels.map(a => s.replaceAll(s, "!");
   return s; 
 }
+
+
+// no replace all in Node v10
+function replace(s){
+  let vowels = /[AEIOU]/ig;
+  s = s.replace(vowels, "!");
+  return s; 
+}
