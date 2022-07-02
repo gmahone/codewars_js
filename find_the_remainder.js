@@ -1,3 +1,4 @@
 function remainder(n, m){
-  return "";  
+  let sortedArray = [n,m].sort();
+  return sortedArray[1] % sortedArray[0];
 }
