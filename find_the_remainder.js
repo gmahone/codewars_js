@@ -1,7 +1,7 @@
 function remainder(n, m){
-  if([n,m].includes(0)){
+  let sortedArray = [n,m].sort((a,b) => a - b);
+  if(sortedArray[0] === 0){
     return NaN;
   }
-  let sortedArray = [n,m].sort();
-  return sortedArray[0] % sortedArray[1];
+  return sortedArray[1] % sortedArray[0];
 }
