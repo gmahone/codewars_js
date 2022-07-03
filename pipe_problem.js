@@ -1,1 +1,3 @@
-
+function pipeFix(numbers){
+  return "";
+}
