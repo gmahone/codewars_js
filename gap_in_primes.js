@@ -8,5 +8,18 @@ function isPrime(n){
 }
 
 function gap(g, m, n) {
-    // your code
+    let previousPrime = undefined;
+    let result = null;
+    for(let i = m; i <= n; i++){
+        if(isPrime(i)){
+            if(previousPrime){
+                if(g === (i - previousPrime)){
+                    return [previousPrime, i];
+                }
+            } else {
+                previousPrime = i;
+            }
+        }
+    }
+    return result;
 }
