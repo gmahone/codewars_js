@@ -12,13 +12,10 @@ function gap(g, m, n) {
     let result = null;
     for(let i = m; i <= n; i++){
         if(isPrime(i)){
-            if(previousPrime){
-                if(g === (i - previousPrime)){
-                    return [previousPrime, i];
-                }
-            } else {
-                previousPrime = i;
+            if(g === (i - previousPrime)){
+                return [previousPrime, i];
             }
+            previousPrime = i;
         }
     }
     return result;
