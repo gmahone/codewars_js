@@ -1,3 +1,4 @@
+// using Set
 function distinct(a) {
-  return [];
+  return new Set(a);
 }
