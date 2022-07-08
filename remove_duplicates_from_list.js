@@ -12,3 +12,6 @@ function distinct(a) {
 function distinct(a) {
   return a.filter((e, i, arr) => arr.indexOf(e) === i);
 }
+
+// arrow function version
+const distinct = a => a.filter((e, i, arr) => arr.indexOf(e) === i);
