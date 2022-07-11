@@ -3,7 +3,7 @@ function vertMirror(strng) {
     return result;
 }
 function horMirror(strng) {
-    let result = strng.split("\n").reverse.join("\n");
+    let result = strng.split("\n").reverse().join("\n");
     return result;
 }
 function oper(fct, s) {
