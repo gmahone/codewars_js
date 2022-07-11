@@ -1,3 +1,3 @@
 function addLength(str) {
-//start-here
+  return str.split(" ").map(a => `${a} ${a.length}`);
 }
