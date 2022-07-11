@@ -1,9 +1,11 @@
 function vertMirror(strng) {
-    // Your code
+    let result = strng.split("\n").map(a => a.split("").reverse().join("")).join("\n");
+    return result;
 }
 function horMirror(strng) {
-    // Your code
+    let result = strng.split("\n").reverse.join("\n");
+    return result;
 }
 function oper(fct, s) {
-    // Your code
+    return fct(s);
 }
