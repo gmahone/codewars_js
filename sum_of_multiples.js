@@ -1,4 +1,11 @@
 function sumMul(n,m){
-  let multVal = n / (m-1) >> 0;
-  result = new Array(multVal).fill(n).map((e,i) => e * (i+1));
+  if(m < 1){
+    return "INVALID";
+  }
+  let multVal = (m-1) / n >> 0;
+  result = new Array(multVal)
+    .fill(n)
+    .map((e,i) => e * (i+1))
+    .reduce((acc,c) => acc + c,0);
+  return result;
 }
