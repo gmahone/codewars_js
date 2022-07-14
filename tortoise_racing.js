@@ -64,7 +64,7 @@ function race(v1, v2, g) {
 // switching to a normal while loop, its easier
 function race(v1, v2, g) {
   if(v1 > v2){
-    return None;
+    return null;
   }
   console.log(v1, v2)
   let s = 0;
@@ -72,15 +72,22 @@ function race(v1, v2, g) {
     let dist1 = v1/3600 * s + g;
     let dist2 = v2/3600 * s;
     
-    if(dist2 >= dist1){
+    if(dist2 > dist1){
       let resultH = Math.floor(s / 3600);
       let resultM = Math.floor((s % 3600) / 60);
       let resultS = Math.floor((s % 3600) % 60)-1;
         return [resultH, 
           resultM, 
-          resultS <= 0 ? 0 : resultS];
+          resultS < 0 ? 0 : resultS];
+    }
+    if(dist2 == dist1){
+      let resultH = Math.floor(s / 3600);
+      let resultM = Math.floor((s % 3600) / 60);
+      let resultS = Math.floor((s % 3600) % 60);
+        return [resultH, 
+          resultM, 
+          resultS < 0 ? 0 : resultS];
     }
     s += 1;
   }
 }
-
