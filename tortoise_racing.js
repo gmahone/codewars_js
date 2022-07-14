@@ -22,5 +22,5 @@ function travelComp(v1, v2, g, s){
 function race(v1, v2, g) {
     let result = travelComp(v1, v2, g, s=0);
     console.log(result);
-    return "";
+    return [Math.floor(result / 3600), Math.floor((result % 3600) / 60), Math.floor((result % 3600) % 60)];
 }
