@@ -9,18 +9,23 @@
 //  x/v1 = (x+g)/v2
 
 function travelComp(v1, v2, g, s){
-    let dist1 = v1/3600 * s + g;
-    let dist2 = v2/3600 * s;
-    if(dist2 >= dist1){
-        return s;
-    } else {
-        return travelComp(v1, v2, g, s+1);
-    }
+  let dist1 = v1/3600 * s + g;
+  let dist2 = v2/3600 * s;
+  if(dist2 >= dist1){
+      return s;
+  } else {
+      return travelComp(v1, v2, g, s+1);
+  }
 }
 
 // lets just brute force with recursion...
 function race(v1, v2, g) {
-    let result = travelComp(v1, v2, g, s=0);
-    console.log(result);
-    return [Math.floor(result / 3600), Math.floor((result % 3600) / 60), Math.floor((result % 3600) % 60)];
+  if(v1 > v2){
+    return None;
+  }
+  let result = travelComp(v1, v2, g, s=0);
+  result -= 1;
+  return [Math.floor(result / 3600), 
+          Math.floor((result % 3600) / 60), 
+          Math.floor((result % 3600) % 60)];
 }
