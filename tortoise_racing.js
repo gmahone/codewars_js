@@ -66,16 +66,19 @@ function race(v1, v2, g) {
   if(v1 > v2){
     return None;
   }
-  
+  console.log(v1, v2)
   let s = 0;
   while(true){
     let dist1 = v1/3600 * s + g;
     let dist2 = v2/3600 * s;
     
-    if(Math.floor(dist1) === Math.floor(dist2)){
-        return [Math.floor(result / 3600), 
-          Math.floor((result % 3600) / 60), 
-          Math.floor((result % 3600) % 60)];
+    if(dist2 >= dist1){
+      let resultH = Math.floor(s / 3600);
+      let resultM = Math.floor((s % 3600) / 60);
+      let resultS = Math.floor((s % 3600) % 60)-1;
+        return [resultH, 
+          resultM, 
+          resultS <= 0 ? 0 : resultS];
     }
     s += 1;
   }
