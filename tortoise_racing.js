@@ -58,3 +58,26 @@ function race(v1, v2, g) {
           Math.floor((result % 3600) % 60)];
 }
 
+// -------------------------------------------------
+
+
+// switching to a normal while loop, its easier
+function race(v1, v2, g) {
+  if(v1 > v2){
+    return None;
+  }
+  
+  let s = 0;
+  while(true){
+    let dist1 = v1/3600 * s + g;
+    let dist2 = v2/3600 * s;
+    
+    if(Math.floor(dist1) === Math.floor(dist2)){
+        return [Math.floor(result / 3600), 
+          Math.floor((result % 3600) / 60), 
+          Math.floor((result % 3600) % 60)];
+    }
+    s += 1;
+  }
+}
+
