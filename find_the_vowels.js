@@ -1,3 +1,3 @@
 function vowelIndices(word){
-  //your code here
+  return word.split("").filter(a => a.match([/aeiou/]));
 }
