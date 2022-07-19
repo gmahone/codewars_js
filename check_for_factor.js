@@ -1,3 +1,3 @@
 function checkForFactor (base, factor) {
-  return base % factor === 0
+  return base % factor === 0;
 }
