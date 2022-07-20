@@ -7,6 +7,13 @@ function preFizz(n) {
 }
 
 
+// using array from
+function preFizz(n) {
+  let result = Array.from({length: n}. (_, i) => i + 1);
+  return result;
+}
+
+
 // using array from in arrow function
 
 const preFizz = n => Array.from({length: n}, (_, i) => i + 1)
