@@ -5,3 +5,8 @@ function preFizz(n) {
   }
   return result;
 }
+
+
+// using array from in arrow function
+
+const preFizz = n => Array.from({length: n}, (_, i) => i + 1)
