@@ -9,3 +9,7 @@ function arr(n){
   }
   return newArr;
 }
+
+
+// arrow function with Array.from
+const arr = n => Array.from({length: n}, (_, i) => i);
