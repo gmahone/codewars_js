@@ -13,3 +13,6 @@ function arr(n){
 
 // arrow function with Array.from
 const arr = n => Array.from({length: n}, (_, i) => i);
+
+// arrow function using Array .keys
+const arr = n => n ? [...Array(n).keys()] : [];
