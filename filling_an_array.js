@@ -1,1 +1,1 @@
-const arr = N => [ /* the numbers 0 to N-1 */ ];
+const arr = N => N ? Array(N).fill(0).map((e,i) => e + i) : [];
