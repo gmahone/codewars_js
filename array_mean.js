@@ -1,3 +1,3 @@
 var findAverage = function (nums) {
-  // Code here
+  return nums.reduce((acc,c) => acc + c, 0)/nums.length
 }
