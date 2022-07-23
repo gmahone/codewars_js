@@ -1,3 +1,3 @@
 function partlist(arr) {
-    // your code
+    return arr.map((e,i,arr) => [e, test.slice(i+1).join("")])
 }
