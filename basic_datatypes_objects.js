@@ -1,3 +1,4 @@
 function animal(obj){
-  return `This ${self.color} ${self.name} has ${self.legs} legs.`;
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
 }
+
