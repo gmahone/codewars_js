@@ -1,3 +1,3 @@
 function animal(obj){
-  return ?
+  return `This ${self.color} ${self.name} has ${self.legs} legs.`;
 }
