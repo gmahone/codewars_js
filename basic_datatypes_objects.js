@@ -1,1 +1,3 @@
-
+function animal(obj){
+  return ?
+}
