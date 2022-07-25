@@ -1,1 +1,3 @@
-
+function invert(array) {
+   return ;
+}
