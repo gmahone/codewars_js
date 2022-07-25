@@ -1,3 +1,3 @@
 function invert(array) {
-   return ;
+   return array.map(a => -1 * a);
 }
