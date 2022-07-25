@@ -7,3 +7,7 @@ function invert(array) {
 function invert(array) {
    return array.map( a => a === 0 ? a : -a);
 }
+
+
+// arrow function version
+const invert = array => array.map(a => -a);
