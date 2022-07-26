@@ -1,3 +1,4 @@
 function nameShuffler(str){
-  //Shuffle It
+  let res = str.split(" ").reverse();
+  return res;
 }
