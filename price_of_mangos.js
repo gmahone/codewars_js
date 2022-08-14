@@ -1,3 +1,3 @@
 function mango(quantity, price){
-  return "";
+  return (2 * quantity / 3 * price);
 }
