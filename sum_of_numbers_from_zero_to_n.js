@@ -11,7 +11,6 @@ var SequenceSum = (function() {
     }
 
     let result1 = Array(count+1).fill(0).map((e,i) => e + i);
-    console.log(count)   
     
     return result1.join("+") + " = " + result1.reduce((acc, c) => acc + c, 0);
   };
