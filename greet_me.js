@@ -11,3 +11,9 @@ String.prototype.capitalize = function() {
 var greet = function(name) {
 return "Hello " + name.capitalize() + "!";
 };
+
+
+// solution with string addition
+var greet = function(name) {
+  return "Hello " + name.charAt(0).toUpperCase() + name.slice(1).toLowerCase() + "!";
+};
