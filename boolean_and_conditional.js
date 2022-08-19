@@ -8,3 +8,9 @@ function trueOrFalse(val){
 function trueOrFalse(val){
   return Boolean(val).toString();
 }
+
+
+// ternary solution
+function trueOrFalse(val){
+  return val ? true : false;             
+}
