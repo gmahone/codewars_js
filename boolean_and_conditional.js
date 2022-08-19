@@ -1,4 +1,4 @@
 function trueOrFalse(val){
-  if ()    return ?;             
-  else     return ?;
+  if (val)    return "true";             
+  else     return "false";
 }
