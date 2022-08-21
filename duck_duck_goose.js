@@ -6,3 +6,9 @@ function duckDuckGoose(players, goose) {
   console.log(players.length, goose, chosen)
   return players[chosen].name;
 }
+
+
+// much less complex function
+function duckDuckGoose(players, goose) {
+  return players[(goose-1)%players.length].name
+}
