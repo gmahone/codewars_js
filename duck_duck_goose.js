@@ -12,3 +12,7 @@ function duckDuckGoose(players, goose) {
 function duckDuckGoose(players, goose) {
   return players[(goose-1)%players.length].name
 }
+
+
+// arrow function version
+const duckDuckGoose = (players, goose) => players[(goose - 1) % players.length].name;
