@@ -6,6 +6,6 @@ function closeCompare(a, b, margin = 0){
   if(a < b + margin){
     result = -1;
   }
-    
+  return result;
 }
 
