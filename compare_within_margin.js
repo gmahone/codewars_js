@@ -1,5 +1,5 @@
 function closeCompare(a, b, margin = 0){
-  let result;
+  let result = 0;
   if(a > b + margin){
     result = 1;
   }
