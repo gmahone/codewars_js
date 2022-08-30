@@ -6,3 +6,6 @@ function dataReverse(data) {
   }
   return result.reverse().flat()
 }
+
+
+// with index jumping and unshift
