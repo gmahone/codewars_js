@@ -9,3 +9,10 @@ function dataReverse(data) {
 
 
 // with index jumping and unshift
+const dataReverse = data => {
+  const bytes = [];
+  for (let i = 0; i < data.length; i += 8) {
+    bytes.unshift(...data.slice(i, i + 8));
+  }
+  return bytes;
+};
