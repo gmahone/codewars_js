@@ -16,3 +16,7 @@ const dataReverse = data => {
   }
   return bytes;
 };
+
+
+// arrow function regex
+const dataReverse = a => a.join``.match(/\d{8}/g).reverse().join``.split``.map(Number);
