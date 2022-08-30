@@ -1,3 +1,8 @@
 function dataReverse(data) {
-  // Your code here
+  let result = [];
+  while(data.length){
+    result.push(data.slice(0,8));
+    data = data.slice(8)
+  }
+  console.log(result.reverse())
 }
