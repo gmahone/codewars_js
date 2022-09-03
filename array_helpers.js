@@ -43,7 +43,7 @@ Array.prototype.sum = function () {
 Array.prototype.even = function () {
     var result = [];
     for (var i = 0; i < this.length; i++) {
-        if(this[i] %% 2 == 0){
+        if(this[i] % 2 == 0){
             result.push(this[i]);
         }
     }
