@@ -4,7 +4,6 @@ Array.prototype.square = function () {
     for (var i = 0; i < this.length; i++) {
         result.push(this[i]**2);
     }
-    console.log(result)
     return result;
 };
 
