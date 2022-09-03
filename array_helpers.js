@@ -52,3 +52,12 @@ Array.prototype.even = function () {
 
 
 //odd
+Array.prototype.odd = function () {
+    var result = [];
+    for (var i = 0; i < this.length; i++) {
+        if(this[i] & 1){
+            result.push(this[i]);
+        }
+    }
+    return result;
+};
