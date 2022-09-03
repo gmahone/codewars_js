@@ -8,7 +8,7 @@ Array.prototype.square = function () {
 };
 
 //cube
-Array.prototype.square = function () {
+Array.prototype.cube = function () {
     var result = [];
     for (var i = 0; i < this.length; i++) {
         result.push(this[i]**3);
@@ -18,6 +18,13 @@ Array.prototype.square = function () {
 
 
 //average
+Array.prototype.square = function () {
+    var result = [];
+    for (var i = 0; i < this.length; i++) {
+        result.push(this[i]**3);
+    }
+    return result;
+};
 
 
 //sum
