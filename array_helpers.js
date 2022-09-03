@@ -18,12 +18,15 @@ Array.prototype.cube = function () {
 
 
 //average
-Array.prototype.square = function () {
-    var result = [];
-    for (var i = 0; i < this.length; i++) {
-        result.push(this[i]**3);
+Array.prototype.average = function () {
+    if(this.length == 0){
+        return NaN;
     }
-    return result;
+    var result = 0;
+    for (var i = 0; i < this.length; i++) {
+        result += this[i];
+    }
+    return(result / this.length);
 };
 
 
