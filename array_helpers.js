@@ -1,5 +1,12 @@
 //square
-
+Array.prototype.square = function () {
+    var result = [];
+    for (var i = 0; i < this.length; i++) {
+        result.push(this[i]**2);
+    }
+    console.log(result)
+    return result;
+};
 
 //cube
 
