@@ -4,3 +4,9 @@ function divCon(x){
   
   return numberArraySum - stringArraySum;
 }
+
+
+// one line solution via ternary
+function divCon(x){
+  return x.reduce((acc, cur) => typeof cur === 'number'? acc + cur : acc - Number(cur),0)
+}
