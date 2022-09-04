@@ -3,5 +3,5 @@ function divCon(x){
   let numberArraySum = x.filter((e) => typeof(e) != "string").reduce((acc,c) => acc + c, 0);
   console.log(x, stringArraySum, numberArraySum);
   
-  return stringArraySum - numberArraySum;
+  return numberArraySum - stringArraySum;
 }
