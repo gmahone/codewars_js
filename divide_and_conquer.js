@@ -1,1 +1,3 @@
-
+function divCon(x){
+  return "";
+}
