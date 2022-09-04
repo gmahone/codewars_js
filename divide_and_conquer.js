@@ -1,5 +1,5 @@
 function divCon(x){
-  let stringArray = x.filter((e) => typeof(e) == "string")
+  let stringArraySum = x.filter((e) => typeof(e) == "string").reduce((acc,c) => acc + c, 0);
   let numberArray = x.filter((e) => typeof(e) != "string")
   console.log(x, stringArray, numberArray);
   
