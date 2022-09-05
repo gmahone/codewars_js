@@ -1,1 +1,3 @@
-
+function defineSuit(card) {
+  return "";
+}
