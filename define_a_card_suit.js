@@ -8,3 +8,15 @@ let suitDefinition = {
 function defineSuit(card) {
   return suitDefinition[card.slice(-1).charCodeAt()];
 }
+
+
+// object contained in function
+function defineSuit(card) {
+  const s = {
+    "♣": "clubs",
+    "♠": "spades",
+    "♦": "diamonds",
+    "♥": "hearts"
+  }
+  return s[card.charAt(card.length - 1)]
+}
