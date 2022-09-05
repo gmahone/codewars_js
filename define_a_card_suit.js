@@ -6,5 +6,5 @@ let suitDefinition = {
 }
 
 function defineSuit(card) {
-  return "";
+  return suitDefinition[card.slice(-1).charCodeAt()];
 }
