@@ -17,7 +17,7 @@ function howManydays(month){
         days = 30;
         break;
       default:
-        days = 30;
+        days = 31;
   }
   return days;
 }
