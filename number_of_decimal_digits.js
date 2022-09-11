@@ -13,3 +13,9 @@ function digits(n) {
 function digits(n) {
   return String(n).length
 }
+
+
+// using template literal
+function digits(n) {
+  return `${n}`.length;
+}
