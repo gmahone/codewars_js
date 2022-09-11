@@ -7,3 +7,9 @@ function digits(n) {
 function digits(n) {
   return n.toString().length;
 }
+
+
+// using String()
+function digits(n) {
+  return String(n).length
+}
