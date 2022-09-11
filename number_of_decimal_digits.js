@@ -1,3 +1,4 @@
 function digits(n) {
-  return n.toString().split().length
+  console.log(n.toString().split(""))
+  return ""
 }
