@@ -8,6 +8,9 @@ function digits(n) {
   return n.toString().length;
 }
 
+// arrow function version
+const digits = n => n.toString().length;
+
 
 // using String()
 function digits(n) {
