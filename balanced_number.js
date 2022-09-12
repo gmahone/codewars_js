@@ -1,1 +1,3 @@
-
+function balancedNum(number){
+    return "";
+}
