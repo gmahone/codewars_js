@@ -7,14 +7,5 @@ function balancedNum(number){
         .reverse()
         .slice(0,Math.floor((numberArray.length-1)/2))
         .reduce((acc,c) => acc + c, 0);
-    console.log(numberArray
-        .slice(0,Math.floor((numberArray.length-1)/2))
-        .reduce((acc,c) => acc + c, 0))
-    console.log(numberArray
-        .reverse()
-        .slice(0,Math.floor((numberArray.length-1)/2))
-        .reduce((acc,c) => acc + c, 0))
-    console.log(number)
-    console.log(balanced)
     return balanced ? "Balanced" : "Not Balanced";
 }
