@@ -1,3 +1,3 @@
 function add(n) {
-  return "";
+  return function(x){return x + n};
 }
