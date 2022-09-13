@@ -3,5 +3,5 @@ function upArray(arr){
   console.log(arrayAsNumber);
   let resultArray = String(arrayAsNumber + 1).split("").map(e => Number(e));
   console.log(resultArray);
-  return result;
+  return resultArray;
 }
