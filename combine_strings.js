@@ -1,3 +1,3 @@
 function combineStrings(first, last){
-  return "";  
+  return `${first} ${last}`;  
 }
