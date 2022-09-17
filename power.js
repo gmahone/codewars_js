@@ -12,5 +12,13 @@ function numberToPower(number, power){
   return total;
 }
 
+
+// recursive solution
+function numberToPower(number, power){
+  if (power === 0) return 1;
+  return number * numberToPower(number, power - 1)
+}
+
+
 // recursive arrow function
 const numberToPower = (number,power) => power > 0 ? number * numberToPower(number,power-1) : 1;
