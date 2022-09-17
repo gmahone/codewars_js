@@ -1,3 +1,3 @@
 function numberToPower(number, power){
-  result "";
+  result new Array(power).fill(number).reduce((acc,c) => acc * c, 1);
 }
