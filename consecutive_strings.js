@@ -5,7 +5,6 @@ function longestConsec(strarr, k) {
     }    
     for(let i = 0; i < (strarr.length - k + 1); i++){
         let tempWord = strarr.slice(i, i+k).join("");
-        console.log(tempWord);
         if(tempWord.length > longestWord.length){
             longestWord = tempWord;
         }
