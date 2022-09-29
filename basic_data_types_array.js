@@ -12,7 +12,5 @@ function pushElement(arr){
   return arr.push(el);
 }
 function popElement(arr){
-  //pop an element from arr
-  
-  return ?
+  return(...arr.pop())
 }
