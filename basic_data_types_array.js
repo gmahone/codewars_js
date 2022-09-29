@@ -1,6 +1,5 @@
 function getLength(arr){
-  //return length of arr
-  return ?
+  return arr.length;
 }
 function getFirst(arr){
   //return the first element of arr
