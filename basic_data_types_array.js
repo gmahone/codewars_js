@@ -2,8 +2,7 @@ function getLength(arr){
   return arr.length;
 }
 function getFirst(arr){
-  //return the first element of arr
-  return ?
+  return arr.shift()
 }
 function getLast(arr){
   //return the last element of arr
