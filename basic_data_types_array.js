@@ -8,9 +8,11 @@ function getLast(arr){
   return arr.pop();
 }
 function pushElement(arr){
-  var el=1;  
-  return arr.push(el);
+  var el=1; 
+  arr.push(el);
+  return(arr);
 }
 function popElement(arr){
-  return(...arr.pop())
+  arr.pop();
+  return(arr);
 }
