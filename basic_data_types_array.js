@@ -2,11 +2,10 @@ function getLength(arr){
   return arr.length;
 }
 function getFirst(arr){
-  return arr.shift()
+  return arr.shift();
 }
 function getLast(arr){
-  //return the last element of arr
-  return ?
+  return arr.pop();
 }
 function pushElement(arr){
   var el=1;
