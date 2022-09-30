@@ -33,3 +33,6 @@ function calc(x){
   let total2 = total1.replace(/7/g,'1');
   return sum(total1) - sum(total2);
 }
+
+// arrow function regex solution
+const calc=x=>(x.replace(/./g,x=>x.charCodeAt()).match(/7/g)||[]).length*6
