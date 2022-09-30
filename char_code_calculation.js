@@ -5,9 +5,7 @@ function calc(x){
     .split("");
   console.log(charCodeArray)
   
-  let charCodeSwapArray = charCodeArray.join("")
-    .replaceAll(/7/ig, "1")
-    .split("")
+  let charCodeSwapArray = charCodeArray.map(a => a == "7" ? "1" : a)
   console.log(charCodeSwapArray)
     
   let charCodeSum = charCodeArray.reduce((acc,c) => acc + +c, 0);
