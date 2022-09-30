@@ -1,3 +1,3 @@
 function calc(x){
-  return "";
+  let charCodeArray = String(x).split("").map(e => e.charCodeAt());
 }
