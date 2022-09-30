@@ -3,14 +3,18 @@ function calc(x){
     .map(e => String(e.charCodeAt()))
     .join("")
     .split("");
-    
-  let charCodeArraySum = charCodeArray.reduce((acc,c) => acc + +c, 0);
+  console.log(charCodeArray)
   
-  let charCodeSwapSum = charCodeArray.join("")
+  let charCodeSwapArray = charCodeArray.join("")
     .replace("7", "1")
     .split("")
-    .reduce((acc,c) => acc + +c, 0);
-  console.log(charCodeArraySum - charCodeSwapSum);
+  console.log(charCodeSwapArray)
+    
+  let charCodeSum = charCodeArray.reduce((acc,c) => acc + +c, 0);
+  console.log(charCodeSum)
   
-  return "";
+  let charCodeSwapSum = charCodeSwapArray.reduce((acc,c) => acc + +c, 0);
+  console.log(charCodeSwapSum);
+  
+  return(charCodeSum - charCodeSwapSum);
 }
