@@ -1,1 +1,3 @@
-
+function calc(x){
+  return "";
+}
