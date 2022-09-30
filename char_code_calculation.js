@@ -6,7 +6,7 @@ function calc(x){
   console.log(charCodeArray)
   
   let charCodeSwapArray = charCodeArray.join("")
-    .replace("7", "1")
+    .replaceAll(/7/ig, "1")
     .split("")
   console.log(charCodeSwapArray)
     
