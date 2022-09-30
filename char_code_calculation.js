@@ -10,7 +10,7 @@ function calc(x){
     .replace("7", "1")
     .split("")
     .reduce((acc,c) => acc + +c, 0);
-  console.log(charCodeArray, charCodeArraySum, charCodeSwapSum);
+  console.log(charCodeArraySum - charCodeSwapSum);
   
   return "";
 }
