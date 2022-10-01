@@ -4,5 +4,9 @@ function slope(points){
   let deltaX = (points[2] - points[0]);
   console.log(deltaX);
   console.log(deltaY/deltaX);
-  return("");
+  let result = "undefined";
+  if(deltaX !== 0){
+    result = String(deltaY/deltaX);
+  }
+  return(result);
 }
