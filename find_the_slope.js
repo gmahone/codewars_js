@@ -1,1 +1,3 @@
-
+function slope(points){
+  return "";
+}
