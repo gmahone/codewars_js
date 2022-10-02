@@ -13,10 +13,9 @@ function encrypt(text, n) {
         evenArray.push(text[j]);
       }
     }
-    console.log(oddArray, evenArray)
-    text = oddArray.push(evenArray);
+    let result = oddArray.join("") + evenArray.join("")
   }
-  return "";
+  return(result);
 }
 
 function decrypt(encryptedText, n) {
