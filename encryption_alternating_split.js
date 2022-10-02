@@ -9,9 +9,9 @@ function encrypt(text, n) {
     }
     console.log(oddArray,evenArray);
   }
-  result "";
+  return "";
 }
 
 function decrypt(encryptedText, n) {
-
+  return "";
 }
