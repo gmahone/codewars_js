@@ -5,15 +5,15 @@ function encrypt(text, n) {
   let oddArray = [];
   let evenArray = [];
   for(let i = 0; i < n; i++){
-    for(let j = 0; j < test.length; j++){
-      if(i & 1){
-        oddArray.push(text[i]);
+    for(let j = 0; j < text.length; j++){
+      if(j & 1){
+        oddArray.push(text[j]);
       } else {
-        evenArray.push(text[i]);
+        evenArray.push(text[j]);
       }
-      test = oddArray.push(evenArray);
-      console.log(test)
     }
+    text = oddArray.push(evenArray);
+    console.log(text)
   }
   return "";
 }
