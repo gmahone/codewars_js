@@ -1,13 +1,19 @@
 function encrypt(text, n) {
-  let oddArray;
-  let evenArray;
+  if(n < 1){
+    return(text);
+  }
+  let oddArray = [];
+  let evenArray = [];
   for(let i = 0; i < n; i++){
-    if(i & 1){
-      oddArray.push(text[i]);
-    } else {
-      evenArray.push(text[i]);
+    for(let j = 0; j < test.length; j++){
+      if(i & 1){
+        oddArray.push(text[i]);
+      } else {
+        evenArray.push(text[i]);
+      }
+      test = oddArray.push(evenArray);
+      console.log(test)
     }
-    console.log(oddArray,evenArray);
   }
   return "";
 }
