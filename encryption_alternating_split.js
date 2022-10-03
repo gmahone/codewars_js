@@ -18,11 +18,11 @@ function encrypt(text, n) {
 }
 
 function decrypt(encryptedText, n) {
+  if(n < 1){
+    return(encryptedText);
+  }
   let text = encryptedText.split("");
   console.log(n)
-  if(n < 1){
-    return(text.join(""));
-  }
   for(let i = 0; i < n; i++){
     let oddText = text.filter((e,i) => i < Math.floor(text.length/2));
     console.log(oddText);
