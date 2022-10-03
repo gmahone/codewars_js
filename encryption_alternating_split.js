@@ -1,5 +1,5 @@
 function encrypt(text, n) {
-  if(n < 1){
+  if(n < 1 || text == null){
     return(text);
   }
   for(let i = 0; i < n; i++){
@@ -18,7 +18,7 @@ function encrypt(text, n) {
 }
 
 function decrypt(encryptedText, n) {
-  if(n < 1){
+  if(n < 1 || encryptedText == null){
     return(encryptedText);
   }
   let text = encryptedText.split("");
