@@ -22,15 +22,11 @@ function decrypt(encryptedText, n) {
     return(encryptedText);
   }
   let text = encryptedText.split("");
-  console.log(n)
   for(let i = 0; i < n; i++){
     let oddText = text.filter((e,i) => i < Math.floor(text.length/2));
-    console.log(oddText);
     let evenText = text.filter((e,i) => i >= Math.floor(text.length/2));
-    console.log(evenText);
     let newText = [];
     for(let j = 0; j < text.length; j++){
-      console.log(newText);
       if(j & 1){
         let addOne = oddText.shift();
         newText.push(addOne);
