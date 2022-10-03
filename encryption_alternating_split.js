@@ -18,17 +18,19 @@ function encrypt(text, n) {
 }
 
 function decrypt(encryptedText, n) {
-  let text = encryptedText;
+  let text = encryptedText.split("");
+  console.log(n)
   if(n < 1){
-    return(text);
+    return(text.join(""));
   }
   for(let i = 0; i < n; i++){
-    let oddText = text.filter((e,i) => i < Math.ceil(text.length/2));
+    let oddText = text.filter((e,i) => i < Math.floor(text.length/2));
     console.log(oddText);
-    let evenText = text.filter((e,i) => i >= Math.ceil(text.length/2));
+    let evenText = text.filter((e,i) => i >= Math.floor(text.length/2));
     console.log(evenText);
     let newText = [];
     for(let j = 0; j < text.length; j++){
+      console.log(newText);
       if(j & 1){
         let addOne = oddText.shift();
         newText.push(addOne);
@@ -37,7 +39,7 @@ function decrypt(encryptedText, n) {
         newText.push(addOne);
       }
     }
-    let text = newText;
+    text = newText;
   }
-  return(text);
+  return(text.join(""));
 }
