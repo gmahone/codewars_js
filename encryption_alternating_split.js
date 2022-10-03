@@ -20,6 +20,8 @@ function encrypt(text, n) {
 function decrypt(encryptedText, n) {
   let text = encryptedText;
   let oddText = text.filter((e,i) => i < Math.ceil(n/2));
+  console.log(oddText);
   let evenText = text.filter((e,i) => i >= Math.ceil(n/2));
+  console.log(evenText);
   return "";
 }
