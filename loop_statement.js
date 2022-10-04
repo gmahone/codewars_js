@@ -1,1 +1,3 @@
-
+function giveMeFive(obj){
+  return "";
+}
