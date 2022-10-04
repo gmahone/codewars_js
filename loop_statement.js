@@ -1,5 +1,7 @@
 function giveMeFive(obj){
   for(let key in obj){
-    console.log(obj[key]);
+    if(obj[key].length < 5){
+      console.log(obj[key]);
+    }
   }
 }
