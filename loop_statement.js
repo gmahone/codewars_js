@@ -1,3 +1,5 @@
 function giveMeFive(obj){
-  return "";
+  for(let key in obj){
+    console.log(obj[key]);
+  }
 }
