@@ -10,3 +10,7 @@ function giveMeFive(obj){
   }
   return(result);
 }
+
+
+// object conversion in arrow function
+const giveMeFive = obj => [].concat(...Object.entries(obj)).filter(element => element.length == 5);
