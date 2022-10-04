@@ -5,4 +5,5 @@ function giveMeFive(obj){
       result.push(obj[key]);
     }
   }
+  return(result);
 }
