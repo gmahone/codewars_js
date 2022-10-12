@@ -4,3 +4,8 @@ function squareArea(A){
   let roundedVolume = Math.round(volume*100)/100;
   return(roundedVolume);
 }
+
+// solution using toFixed
+function squareArea(A){
+  return +Math.pow(2*A/Math.PI, 2).toFixed(2);
+}
