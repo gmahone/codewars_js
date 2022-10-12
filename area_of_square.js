@@ -1,3 +1,3 @@
 function squareArea(A){
-  return "";
+  return ((4*A)/(2*Math.PI))**2
 }
