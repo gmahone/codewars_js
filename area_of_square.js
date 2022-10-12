@@ -1,1 +1,3 @@
-
+function squareArea(A){
+  return "";
+}
