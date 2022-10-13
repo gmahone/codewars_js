@@ -1,1 +1,3 @@
-
+function sortMyString(S) {
+    return '';
+}
