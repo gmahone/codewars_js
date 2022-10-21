@@ -14,3 +14,7 @@ function min(arr, toReturn) {
   var val = Math.min.apply(null, arr)
   return toReturn == 'value' ? val : arr.indexOf(val)
 }
+
+
+// add arrow function ternary
+const min = (arr, toReturn) => toReturn === 'value' ? Math.min(...arr) : arr.indexOf(Math.min(...arr));
