@@ -1,1 +1,3 @@
-
+function excludingVatPrice(price){
+  return "";
+}
