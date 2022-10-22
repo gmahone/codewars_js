@@ -1,4 +1,7 @@
 function excludingVatPrice(price){
+  if(price === null){
+    return(-1);
+  }
   console.log(price)
   let priceWithoutVat = price / 1.15
   console.log(priceWithoutVat)
