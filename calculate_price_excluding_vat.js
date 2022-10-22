@@ -10,3 +10,9 @@ function excludingVatPrice(price){
 
 // arrow function ternary
 excludingVatPrice = p => p === null ? -1 : +(p / 1.15).toFixed(2);
+
+
+// normal solution ternary
+function excludingVatPrice(price) {
+  return (price == null) ? -1 : Math.round((price / 1.15) * 100) / 100;
+}
