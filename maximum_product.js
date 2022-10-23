@@ -1,1 +1,3 @@
-
+function adjacentElementsProduct(array) {
+  return "";
+}
