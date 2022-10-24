@@ -4,6 +4,11 @@ function jumpingNumber(n){
   if(inputString.length == 1){
     return(result);
   }
-  console.log(inputString);
-  return "";
+  for(let i == 0, i < (inputString.length-1); i++){
+    let absDiff = Math.abs(Number(inputString[i]) - Number(inputString[i+1]));
+    if(absDiff !== 1){
+      return("Not!!");
+    }
+  }
+  return(result);
 }
