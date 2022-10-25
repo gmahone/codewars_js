@@ -15,6 +15,5 @@ function grader(score) {
   if(score > 1.0 || score < 0.6){
     result = "F";
   }
-  console.log(score)
   return(result);
 }
