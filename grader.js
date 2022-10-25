@@ -1,1 +1,3 @@
-
+function grader(score) {
+  return "";
+}
