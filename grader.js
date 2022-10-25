@@ -1,5 +1,5 @@
 function grader(score) {
-  let result = "F";
+  let result;
   if(score >= 0.6){
     result = "D";
   }
@@ -9,8 +9,12 @@ function grader(score) {
   if(score >= 0.8){
     result = "B";
   }
-  if(score >= 0.9 && score <= 1.0){
+  if(score >= 0.9){
     result = "A";
   }
+  if(score > 1.0 || score < 0.6){
+    result = "F";
+  }
+  console.log(score)
   return(result);
 }
