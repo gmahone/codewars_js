@@ -31,3 +31,6 @@ function howMuchILoveYou(nbPetals) {
   }
   return phrase[nbPetals%6]
 }
+
+// arrow function
+const howMuchILoveYou=n=>['not at all','I love you','a little','a lot','passionately','madly'][n%6]
