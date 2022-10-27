@@ -1,1 +1,3 @@
-
+function howMuchILoveYou(nbPetals) {
+    return "";
+}
