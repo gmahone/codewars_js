@@ -1,3 +1,8 @@
 function Hero (name = "Hero") {
-  // add default values here
+  let hero = {name: name,
+             position: "00",
+             health: 100,
+             damage: 5,
+             experience: 0};
+  return(hero);
 }
