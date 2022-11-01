@@ -1,1 +1,3 @@
-
+function catMouse(x){
+  return "";
+}
