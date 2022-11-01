@@ -1,3 +1,6 @@
 function catMouse(x){
-  return "";
+  let result = "Caught!";
+  if(x.length > 5){
+    result = "Escaped!";
+  return(result);
 }
