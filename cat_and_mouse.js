@@ -5,3 +5,8 @@ function catMouse(x){
   }
   return(result);
 }
+
+// solution with ternary
+function catMouse(x) {
+  return x.length <= 5 ? 'Caught!' : 'Escaped!';
+}
