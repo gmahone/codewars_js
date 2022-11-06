@@ -38,3 +38,33 @@ function aliasGen(first, last){
   Y: 'Y',
   Z: 'Zero' }
   */
+
+
+/* 
+{ A: 'Analogue',
+  B: 'Bomb',
+  C: 'Catalyst',
+  D: 'Discharge',
+  E: 'Electron',
+  F: 'Faraday',
+  G: 'Gig',
+  H: 'Hacker',
+  I: 'IP',
+  J: 'Jabber',
+  K: 'Killer',
+  L: 'Lazer',
+  M: 'Mike',
+  N: 'n00b',
+  O: 'Overclock',
+  P: 'Payload',
+  Q: 'Quark',
+  R: 'Roy',
+  S: 'Spy',
+  T: 'T-Rex',
+  U: 'Unit',
+  V: 'Virus',
+  W: 'Worm',
+  X: 'X',
+  Y: 'Yob',
+  Z: 'Zombie' }
+  */
