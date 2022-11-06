@@ -6,8 +6,7 @@ function aliasGen(first, last){
        surname.hasOwnProperty(secondLetter)){
         result = `${firstName[firstLetter]} ${surname[secondLetter]}`;
     }
-    console.log(result);
-    return "";
+    return(result);
 }
 
 /* first name object
