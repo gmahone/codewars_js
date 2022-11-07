@@ -1,5 +1,7 @@
 function cubeOdd(arr) {
-  arr.map(e => e**3);
-  console.log(arr);
-  return 0;
+  let result = arr.map(e => e**3)
+    .filter(e => e & 1)
+    .reduce((acc,e) => acc + e);
+  console.log(result);
+  return result;
 }
