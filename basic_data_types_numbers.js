@@ -32,6 +32,6 @@ function equal4(){
 
 function equal5(){
   let a =  v6, //set number value to a
-      b =  v4; //set number value to b
+      b =  v3; //set number value to b
   return a % b;
 }
