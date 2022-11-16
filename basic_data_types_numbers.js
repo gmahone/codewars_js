@@ -25,8 +25,8 @@ function equal3(){
 }
 
 function equal4(){
-  let a =  , //set number value to a
-      b =  ; //set number value to b
+  let a =  v4, //set number value to a
+      b =  v5; //set number value to b
   return a / b;
 }
 
