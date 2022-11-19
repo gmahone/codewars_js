@@ -1,5 +1,6 @@
 var findDigit = function(num, nth){
-    numAsString = String(num);
-    console.log(numAsString)
+    let numAsString = String(num);
+    let newIndex = numAsString.length - nth
+    console.log(newIndex);
     return("");
 }
