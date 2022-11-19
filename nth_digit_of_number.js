@@ -12,3 +12,16 @@ var findDigit = function(num, nth){
     }
     return("");
 }
+
+
+// add math solution
+var findDigit = function(num, nth){
+    if(nth <= 0){
+      return(-1);
+    }
+    var x = Math.abs(num);
+    for (var i=1; i < nth; i++){
+      x = Math.floor(x/10);
+    }
+    return(x % 10);
+}
