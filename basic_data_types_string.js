@@ -5,7 +5,7 @@ function Dad(){
 }
 function Bee(){
   //select some variable to combine "Bee"
-  return ?+?+?;
+  return b1+e2+e2;
 }
 function banana(){
   //select some variable to combine "banana"
