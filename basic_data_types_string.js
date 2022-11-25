@@ -23,5 +23,5 @@ function answer2(){
 }
 function answer3(){
   //the answer should be "yes" or "no"
-  return "";
+  return "yes";
 }
